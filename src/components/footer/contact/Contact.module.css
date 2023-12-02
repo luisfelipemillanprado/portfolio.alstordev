@@ -1,0 +1,43 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+.contact {
+    width: 100%;
+    /*background-color: turquoise;*/
+}
+
+.contact_title {
+    font-family: var(--font-family-1);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contact_paragraph {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.contact_icon_container {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    /*background-color: aqua;*/
+}
+
+.contact_text_container {
+    align-items: flex-start;
+    /*background-color: blue;*/
+}

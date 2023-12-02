@@ -1,0 +1,25 @@
+/*                              ----------------------                                   */
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.skills_container {
+    width: 100%;
+    margin-bottom: 2.7rem;
+    /*background-color: azure;*/
+}
+
+.skills_tilte {
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.6rem;
+}
+
+.skills_advance_container {
+    width: 100%;
+}

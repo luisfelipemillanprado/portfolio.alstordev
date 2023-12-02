@@ -1,0 +1,16 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.social_network_link {
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 0.1rem solid var(--firt-color-icon);
+    border-radius: 2rem;
+    justify-content: center;
+}

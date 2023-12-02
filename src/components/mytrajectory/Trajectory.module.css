@@ -1,0 +1,29 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.trajectory {
+    width: 100%;
+    background-color: var(--second-section-background-color);
+    padding: 0rem 2.4rem 1.6rem;
+}
+
+.trajectory_container_all {
+    width: 100%;
+    /*background-color: aqua;*/
+}
+
+.trajectory_experience {
+    width: 100%;
+}

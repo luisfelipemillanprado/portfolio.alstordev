@@ -1,0 +1,37 @@
+/*                              ----------------------                                   */
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.personal_details {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    /*background-color: aqua;*/
+}
+
+.personal_details_title {
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    line-height: normal;
+}
+
+.greeting_tilte {
+    margin-bottom: 1rem;
+}
+
+.detalis_tilte {
+    margin-bottom: 1.6rem;
+    letter-spacing: normal;
+}
+
+.personal_details_paragraph {
+    width: 100%;
+    font-family: var(--font-family-1);
+    margin-bottom: 2.5rem;
+    line-height: 1.5714285714285714;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.experience_steps_container {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    /*background-color: antiquewhite;*/
+}
+
+.experience_text_container {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.experience_title {
+    font-family: var(--font-family-1);
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--third-background-border);
+    background-color: var(--third-card-background-color);
+}
+
+.sub_title_margin_container {
+    margin-bottom: 0.9rem;
+}
+
+.experience_conector {
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+}
+
+.experience_sub_title {
+    font-family: var(--font-family-1);
+    line-height: normal;
+}
+
+.description_margin_container {
+    margin-bottom: 0.5rem;
+}
+
+.experience_description {
+    width: 100%;
+    font-family: var(--font-family-1);
+}
+
+.experience_icon {
+    background-color: var(--third-card-background-color);
+    border-radius: 2rem;
+    padding: 0.3rem;
+}

@@ -1,0 +1,20 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.logo_container {
+    width: 2.2rem;
+    height: 2.2rem;
+    /*background-color: beige;*/
+}
+
+.logo_icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    object-fit: cover;
+}

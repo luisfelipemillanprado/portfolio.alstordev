@@ -1,0 +1,36 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+.footer {
+    width: 100%;
+    background-color: var(--third-section-background-color);
+    padding: 0rem 2.4rem 1rem;
+}
+
+.wrapper {
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}
+
+.footer_contact {
+    width: 100%;
+    margin-bottom: 2.7rem;
+    /*background-color: blueviolet;*/
+}
+
+.footer_rights {
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--second-section-background-color);
+}

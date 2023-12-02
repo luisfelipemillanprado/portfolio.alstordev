@@ -1,0 +1,33 @@
+/*                              ----------------------                                   */
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.teamwork_container {
+    width: 100%;
+    gap: 0.5rem;
+    /* background-color: beige;*/
+    align-items: flex-start;
+}
+
+.teamwork_text {
+    font-family: var(--font-family-1);
+    line-height: normal;
+}
+
+.teamwork_progress_container {
+    width: 100%;
+    gap: 0.8rem;
+    justify-content: center;
+    /*background-color: azure;*/
+}

@@ -1,0 +1,20 @@
+/*                              ----------------------                                   */
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.hobbies_container {
+    width: 100%;
+    /*background-color: azure;*/
+}
+
+.hobbies_title {
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.6rem;
+}

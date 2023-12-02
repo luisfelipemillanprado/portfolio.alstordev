@@ -1,0 +1,40 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.services {
+    width: 100%;
+    background-color: var(--third-section-background-color);
+    padding: 0rem 2.4rem 4rem;
+}
+
+.services_container_all {
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}
+
+.wrapper {
+    width: 100%;
+    /* background-color: aqua;*/
+}
+
+.services_webparts {
+    width: 100%;
+    /*background-color: aquamarine;*/
+}
+
+.services_skills {
+    width: 100%;
+    /*background-color: blueviolet;*/
+}

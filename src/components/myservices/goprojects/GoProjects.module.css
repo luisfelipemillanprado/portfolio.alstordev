@@ -1,0 +1,44 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.goprojects_container {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    /*background-color: aqua;*/
+}
+
+.goprojects_link {
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid var(--third-background-border);
+    background-color: transparent;
+    border-radius: 2rem;
+    justify-content: center;
+}
+
+.goprojects_link:hover {
+    background-color: var(--secondary-background-border);
+}
+
+.goprojects_text {
+    font-weight: 500;
+    font-family: var(--font-family-1);
+}
+
+.goprojects_right_icon_container {
+    margin-left: 0.6rem;
+}
+
+.goprojects_right_icon {
+    transition: all 0.3s;
+}
+
+.goprojects_link:hover .goprojects_right_icon {
+    transform: translateX(0.5rem);
+}

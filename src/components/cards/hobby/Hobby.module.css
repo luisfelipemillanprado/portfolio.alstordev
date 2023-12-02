@@ -1,0 +1,21 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.hobby_title_container {
+    justify-content: center;
+}
+
+.hobby_card_title {
+    line-height: normal;
+}
+
+.hobby_icon_container {
+    padding: 1.45rem 2rem;
+    justify-content: center;
+}

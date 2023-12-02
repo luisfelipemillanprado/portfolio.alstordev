@@ -1,0 +1,27 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.navigation_container {
+    width: 100%;
+    padding: 1rem 1.6rem;
+    justify-content: space-between;
+    background-color: var(--first-section-background-color);
+}
+
+.navigation_row_links {
+    width: 100%;
+    justify-content: center;
+    column-gap: 1.2rem;
+}

@@ -1,0 +1,21 @@
+/*                              ----------------------                                   */
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.technology {
+    width: 100%;
+}
+
+.technology_phrase {
+    margin-bottom: 1.4rem;
+    letter-spacing: 'normal'
+}
+
+.technology_projects {
+    font-weight: 550;
+}

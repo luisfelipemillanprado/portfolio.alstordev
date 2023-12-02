@@ -1,0 +1,27 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.item_wrapper {
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid var(--third-background-border);
+    border-radius: 6rem;
+    padding: 0.2rem 1rem 0.2rem 0.5rem;
+    gap: 0.2rem;
+    /*background-color: blue;*/
+}
+
+.item_avatar {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.item_text {
+    font-family: var(--font-family-1);
+    line-height: normal;
+}

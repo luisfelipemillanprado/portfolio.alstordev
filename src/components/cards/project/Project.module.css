@@ -1,0 +1,51 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.project_card_link_container {
+    width: 100%;
+    height: 100%;
+}
+
+.project_card_image {
+    width: 14.559rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.project_card_actions {
+    height: 2.2rem;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.project_card_name_container {
+    width: 100%;
+}
+
+.project_card_name {
+    font-family: var(--font-family-1);
+    font-weight: 600;
+}
+
+.project_progress_container {
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.project_progress_icon {
+    position: relative;
+}
+
+.project_progress_text_container {
+    width: 100%;
+}
+
+.project_progress_text {
+    font-family: var(--font-family-1);
+}

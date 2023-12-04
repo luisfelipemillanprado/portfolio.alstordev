@@ -1,45 +1,49 @@
 import Project from '@/components/cards/project/Project';
-import { Row, Col } from 'antd';
+import { Grid } from '@mui/material';
+import Typography from '@mui/material/Typography';
 import styles from '@/components/myworks/projectlist/ProjectList.module.css';
 // --
 export default function ProjectList(props) {
+  const baseTitle = { color: 'var(--primary-font-color)', fontSize: '2rem' };
   const array = [
     {
       cover: 'pet-shelter',
       title: 'Pet Shelter',
-      percent: '90',
+      percent: 90,
       href: 'https://github.com/luisfelipemillanprado/Take-me-Home',
       id: Math.random(),
     },
     {
       cover: 'bit-coin',
       title: 'Bitcoin',
-      percent: '99',
+      percent: 99,
       href: 'https://github.com/luisfelipemillanprado/luisfelipemillanprado.github.io',
       id: Math.random(),
     },
     {
       cover: 'work-portfolio',
       title: 'Portfolio',
-      percent: '99',
+      percent: 99,
       href: 'https://github.com/luisfelipemillanprado/work-portfolio',
       id: Math.random(),
     },
     {
       cover: 'ti',
       title: 'Ticket',
-      percent: '30',
+      percent: 30,
       href: 'https://github.com/luisfelipemillanprado/luisfelipemillanprado.github.io',
       id: Math.random(),
     },
   ];
   return (
     <div className={[styles.div_vertical_positioning, styles.project_list_container].join(' ')}>
-      <h3 className={styles.project_list_title}>Projects.</h3>
-      <Row className={styles.project_list_container} gutter={[0, 20]} justify={'space-between'}>
+      <Typography variant={'h5'} sx={baseTitle} className={styles.project_list_title}>
+        Projects.
+      </Typography>
+      <Grid direction={'row'} sx={{ justifyContent: 'space-between' }} rowGap={2.3} container>
         {array.map((element) => {
           return (
-            <Col key={element.id}>
+            <Grid item xs={5.6} key={element.id}>
               <Project
                 {...{
                   cover: element.cover,
@@ -48,10 +52,10 @@ export default function ProjectList(props) {
                   href: element.href,
                 }}
               />
-            </Col>
+            </Grid>
           );
         })}
-      </Row>
+      </Grid>
     </div>
   );
 }

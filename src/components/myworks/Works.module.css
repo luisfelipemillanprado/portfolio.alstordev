@@ -1,0 +1,29 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+.works {
+    width: 100%;
+    background-color: var(--second-section-background-color);
+    padding: 0rem 2.4rem 4rem;
+}
+
+.works_container_all {
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}
+
+.works_list {
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}

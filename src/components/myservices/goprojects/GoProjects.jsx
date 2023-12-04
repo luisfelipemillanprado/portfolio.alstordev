@@ -8,7 +8,10 @@ export default function GoProjects(props) {
   const baseText = { color: 'var(--primary-font-color)', fontSize: '1.54rem', lineHeight: 'normal' };
   return (
     <div className={[styles.div_horizontal_positioning, styles.goprojects_container].join(' ')}>
-      <Link className={[styles.div_horizontal_positioning, styles.goprojects_link].join(' ')} href={'/works'}>
+      <Link
+        className={[styles.div_horizontal_positioning, styles.goprojects_link].join(' ')}
+        href={'/worksection'}
+      >
         <Typography variant={'body2'} sx={baseText} className={styles.goprojects_text}>
           See projects
         </Typography>

@@ -8,9 +8,6 @@ import styles from '@/components/mytrajectory/experience/Experience.module.css';
 // --
 export default function Experience(props) {
   const baseIcon = { width: '2.3rem', height: '2.3rem', color: 'var(--second-color-icon)' };
-  const baseText = { color: 'var(--second-font-color)', fontSize: '1.4rem', lineHeight: 'normal' };
-  const baseSubText = { color: 'var(--primary-font-color)', fontSize: '1.5rem' };
-  const connectorStep = { borderLeft: '1px solid var(--primary-background-border)' };
   const items = [
     {
       id: Math.random(),
@@ -24,7 +21,6 @@ export default function Experience(props) {
         >
           <Typography
             variant={'body1'}
-            sx={baseText}
             className={[styles.div_horizontal_positioning, styles.experience_title].join(' ')}
           >
             2022 - PRESENT
@@ -39,7 +35,7 @@ export default function Experience(props) {
             styles.sub_title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_sub_title}>
+          <Typography variant={'body1'} className={styles.experience_sub_title}>
             WEB DEVELOPER - DESOFT
           </Typography>
         </div>
@@ -52,10 +48,8 @@ export default function Experience(props) {
             styles.description_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_description}>
-            Frontend developer.
-            <br />
-            UX/UI designer.
+          <Typography variant={'body1'} className={styles.experience_description}>
+            Frontend developer and interface designer
           </Typography>
         </div>
       ),
@@ -72,7 +66,6 @@ export default function Experience(props) {
         >
           <Typography
             variant={'body1'}
-            sx={baseText}
             className={[styles.div_horizontal_positioning, styles.experience_title].join(' ')}
           >
             2022
@@ -87,7 +80,7 @@ export default function Experience(props) {
             styles.sub_title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_sub_title}>
+          <Typography variant={'body1'} className={styles.experience_sub_title}>
             PLATZI - UDEMY
           </Typography>
         </div>
@@ -100,7 +93,7 @@ export default function Experience(props) {
             styles.description_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_description}>
+          <Typography variant={'body1'} className={styles.experience_description}>
             Active student on these platforms as a means of learning
           </Typography>
         </div>
@@ -118,7 +111,6 @@ export default function Experience(props) {
         >
           <Typography
             variant={'body1'}
-            sx={baseText}
             className={[styles.div_horizontal_positioning, styles.experience_title].join(' ')}
           >
             2022
@@ -133,7 +125,7 @@ export default function Experience(props) {
             styles.sub_title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_sub_title}>
+          <Typography variant={'body1'} className={styles.experience_sub_title}>
             COLLEGE DEGRE
           </Typography>
         </div>
@@ -146,7 +138,7 @@ export default function Experience(props) {
             styles.description_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} sx={baseSubText} className={styles.experience_description}>
+          <Typography variant={'body1'} className={styles.experience_description}>
             Graduated as a software engineer from the Carlos Rafael Rodriguez University of Cuba.
           </Typography>
         </div>
@@ -158,7 +150,6 @@ export default function Experience(props) {
         <div className={[styles.div_horizontal_positioning, styles.experience_text_container].join(' ')}>
           <Typography
             variant={'body1'}
-            sx={baseText}
             className={[styles.div_horizontal_positioning, styles.experience_title].join(' ')}
           >
             ...
@@ -177,7 +168,7 @@ export default function Experience(props) {
               {item.title}
             </StepLabel>
             {index !== items.length - 1 ? (
-              <StepContent sx={connectorStep} className={styles.experience_conector}>
+              <StepContent className={styles.experience_conector}>
                 {item.subTitle}
                 {item.description}
               </StepContent>

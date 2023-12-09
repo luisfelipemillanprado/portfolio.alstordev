@@ -4,6 +4,18 @@ const nextConfig = {
   env: {
     customKey: 'customValue',
   },
+  swcMinify: true,
+  modularizeImports: {
+    '@mui/material': {
+      transform: '@mui/material/{{member}}',
+    },
+    '@mui/styles': {
+      transform: '@mui/styles/{{member}}',
+    },
+    '@mui/icons-material': {
+      transform: '@mui/icons-material/{{member}}',
+    },
+  },
   images: {
     unoptimized: true,
     remotePatterns: [

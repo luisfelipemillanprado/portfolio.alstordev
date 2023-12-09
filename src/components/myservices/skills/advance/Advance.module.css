@@ -15,8 +15,22 @@
 /*-----------------------------------*/
 .advance_container {
     width: 100%;
-    gap: 0.8rem;
+    gap: 0.3rem;
     /* background-color: bisque;*/
+}
+
+.advance_base_progress {
+    width: 5.2rem !important;
+    height: 5.2rem !important;
+}
+
+.advance_progress {
+    color: var(--second-color-icon) !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .advance_wrapper_image_progress {
@@ -32,7 +46,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0.2rem;
+    bottom: 0.62rem;
     justify-content: center;
 }
 
@@ -56,7 +70,5 @@
     justify-content: center;
 }
 
-.advance_text {
-    font-family: var(--font-family-1);
-    line-height: normal;
-}
+/*.advance_text {
+}*/

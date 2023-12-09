@@ -12,10 +12,9 @@
 }
 
 .technology_phrase {
-    margin-bottom: 1.4rem;
-    letter-spacing: 'normal'
+    margin-bottom: 1.4rem !important;
 }
 
 .technology_projects {
-    font-weight: 550;
+    font-weight: 550 !important;
 }

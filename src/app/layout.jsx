@@ -1,5 +1,7 @@
+import ThemeRegistry from '@/libs/provider/ThemeRegistry';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import BasicPopover from '@/components/button/Floating';
 import './globals.css';
 
 export const metadata = {
@@ -12,13 +14,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        <header style={{ width: '100%' }}>
-          <Header />
-        </header>
-        <main style={{ width: '100%' }}>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <ThemeRegistry options={{ key: 'mui', prepend: false }}>
+          <header style={{ width: '100%' }}>
+            <Header />
+          </header>
+          <main style={{ width: '100%' }}>{children}</main>
+          <footer>
+            <Footer />
+          </footer>
+          <BasicPopover />
+        </ThemeRegistry>
       </body>
     </html>
   );

@@ -19,7 +19,8 @@
 }
 
 .experience_title {
-    font-family: var(--font-family-1);
+    font-size: 1.4rem !important;
+    line-height: normal !important;
     padding: 0.2rem 1rem;
     border-radius: 2rem;
     border: 0.1rem solid var(--third-background-border);
@@ -27,7 +28,7 @@
 }
 
 .sub_title_margin_container {
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.6rem;
 }
 
 .experience_conector {
@@ -36,17 +37,15 @@
 }
 
 .experience_sub_title {
-    font-family: var(--font-family-1);
-    line-height: normal;
+    width: 100%;
 }
 
 .description_margin_container {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .experience_description {
     width: 100%;
-    font-family: var(--font-family-1);
 }
 
 .experience_icon {

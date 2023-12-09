@@ -7,6 +7,10 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
+.project_card {
+    background-color: var(--second-card-background-color) !important;
+}
+
 .project_card_link_container {
     width: 100%;
     height: 100%;
@@ -29,8 +33,7 @@
 }
 
 .project_card_name {
-    font-family: var(--font-family-1);
-    font-weight: 600;
+    font-weight: 550 !important;
 }
 
 .project_progress_container {
@@ -42,10 +45,24 @@
     position: relative;
 }
 
+.project_base_progress {
+    width: 1.56rem !important;
+    height: 1.56rem !important;
+}
+
+.project_progress {
+    color: var(--second-color-icon) !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 .project_progress_text_container {
     width: 100%;
 }
 
 .project_progress_text {
-    font-family: var(--font-family-1);
+    line-height: 1.57 !important;
 }

@@ -12,22 +12,24 @@
 }
 
 /*                               --------------------                                   */
+/*-----------------------------------*/
 .contact {
     width: 100%;
     /*background-color: turquoise;*/
 }
 
 .contact_title {
-    font-family: var(--font-family-1);
-    margin-bottom: 1rem;
-    font-weight: 500;
-    line-height: normal;
+    margin-bottom: 0.6rem !important;
 }
 
 .contact_paragraph {
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.2rem !important;
     text-align: center;
+}
+
+.column {
+    width: 100%;
 }
 
 .contact_icon_container {

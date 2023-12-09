@@ -13,14 +13,8 @@ import styles from '@/components/cards/hobby/Hobby.module.css';
 // --
 export default function Hobby(props) {
   const { hobby } = props;
-  const baseCard = {
-    width: '9.8rem',
-    backgroundColor: 'var(--second-card-background-color)',
-    borderRadius: '0.8rem',
-    boxShadow: 'var(--box-shadow)',
-  };
+  const baseCard = { backgroundColor: 'var(--second-card-background-color)' };
   const baseIcon = { fontSize: '2.2rem', color: 'var(--second-font-color)' };
-  const baseText = { fontSize: '1.3rem', color: 'var(--second-font-color)' };
   const iconSwitch = (hobby) => {
     switch (hobby) {
       case 'CINEMA':
@@ -59,13 +53,13 @@ export default function Hobby(props) {
   };
   // --
   return (
-    <Card sx={baseCard}>
+    <Card className={styles.hobby_card} sx={baseCard}>
       <div className={[styles.div_horizontal_positioning, styles.hobby_icon_container].join(' ')}>
         {iconSwitch(hobby).icon}
       </div>
       <CardContent sx={{ padding: '0rem 2rem 1.6rem 2rem !important' }}>
         <div className={[styles.div_horizontal_positioning, styles.hobby_title_container].join(' ')}>
-          <Typography variant='body1' sx={baseText} className={styles.hobby_card_title}>
+          <Typography variant='body2' className={styles.hobby_card_title}>
             {hobby}
           </Typography>
         </div>

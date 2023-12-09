@@ -1,4 +1,10 @@
 /*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 .div_vertical_positioning {
     display: flex;
     flex-flow: column nowrap;
@@ -7,16 +13,14 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
-.skills_container {
-    width: 100%;
-    margin-bottom: 2.7rem;
-    /*background-color: azure;*/
+.floating_container {
+    position: fixed;
+    right: 2rem;
+    bottom: 5.2rem;
+    z-index: 1;
+    /*background-color: aqua;*/
 }
 
-.skills_tilte {
-    margin-bottom: 1.4rem !important;
-}
-
-.skills_advance_container {
-    width: 100%;
+.floating_arrowup_button {
+    margin-bottom: 1rem !important;
 }

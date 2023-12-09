@@ -14,11 +14,10 @@
 }
 
 .rights_title {
-    font-family: var(--font-family-1);
-    font-weight: 500;
-    line-height: normal;
+    font-weight: 550 !important;
+    color: var(--primary-font-color) !important;
 }
 
-.rights_text {
+/* .rights_text {
     font-family: var(--font-family-1);
-}
+} */

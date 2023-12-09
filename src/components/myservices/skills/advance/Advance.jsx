@@ -5,22 +5,6 @@ import styles from '@/components/myservices/skills/advance/Advance.module.css';
 // --
 export default function Advance(props) {
   const { icon, text, percent } = props;
-  const baseText = { color: 'var(--second-font-color)', fontSize: '1.5rem' };
-  const baseProgress = {
-    width: '5.2rem !important',
-    height: '5.2rem !important',
-    color: 'var(--third-card-background-color)',
-  };
-  const Progress = {
-    width: '5.2rem !important',
-    height: '5.2rem !important',
-    color: 'var(--second-color-icon)',
-    position: 'absolute',
-    top: 0,
-    botton: 0,
-    right: 0,
-    left: 0,
-  };
   const iconSwitch = (icon) => {
     switch (icon) {
       case 'html':
@@ -79,8 +63,12 @@ export default function Advance(props) {
     <div className={[styles.div_vertical_positioning, styles.advance_container].join(' ')}>
       <div className={styles.advance_wrapper_image_progress}>
         <div className={styles.advance_wrapper_progress}>
-          <CircularProgress sx={baseProgress} variant={'determinate'} value={100} />
-          <CircularProgress sx={Progress} variant={'determinate'} value={percent} />
+          <CircularProgress className={styles.advance_base_progress} variant={'determinate'} value={100} />
+          <CircularProgress
+            className={[styles.advance_base_progress, styles.advance_progress].join(' ')}
+            variant={'determinate'}
+            value={percent}
+          />
         </div>
         <div className={[styles.div_horizontal_positioning, styles.advance_image_container].join(' ')}>
           <Image
@@ -93,7 +81,7 @@ export default function Advance(props) {
         </div>
       </div>
       <div className={[styles.div_horizontal_positioning, styles.advance_text_container].join(' ')}>
-        <Typography variant={'body2'} sx={baseText} className={styles.advance_text}>
+        <Typography variant={'body2'} className={styles.advance_text}>
           {text}
         </Typography>
       </div>

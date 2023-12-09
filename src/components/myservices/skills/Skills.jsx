@@ -6,7 +6,6 @@ import styles from '@/components/myservices/skills/Skills.module.css';
 // --
 export default function Skills(props) {
   const { skills, title } = props;
-  const baseText = { color: 'var(--primary-font-color)', fontSize: '1.7rem' };
   const technicalSkills = [
     { icon: 'html', text: 'HTML', percent: 75, id: 1 },
     { icon: 'css', text: 'CSS', percent: 75, id: 2 },
@@ -36,7 +35,7 @@ export default function Skills(props) {
   };
   return (
     <div className={[styles.div_vertical_positioning, styles.skills_container].join(' ')}>
-      <Typography variant={'h6'} sx={baseText} className={styles.skills_tilte}>
+      <Typography variant={'h6'} className={styles.skills_tilte}>
         {title}
       </Typography>
       <Grid sx={{ justifyContent: 'space-between' }} columnGap={2} rowGap={2} container>

@@ -7,12 +7,17 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
+.hobby_card {
+    width: 9.8rem;
+}
+
 .hobby_title_container {
     justify-content: center;
 }
 
 .hobby_card_title {
-    line-height: normal;
+    font-size: 1.4rem !important;
+    line-height: normal !important;
 }
 
 .hobby_icon_container {

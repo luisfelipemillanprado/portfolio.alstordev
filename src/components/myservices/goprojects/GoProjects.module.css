@@ -15,7 +15,7 @@
 }
 
 .goprojects_link {
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.4rem;
     border: 0.1rem solid var(--third-background-border);
     background-color: transparent;
     border-radius: 2rem;
@@ -27,8 +27,9 @@
 }
 
 .goprojects_text {
-    font-weight: 500;
-    font-family: var(--font-family-1);
+    font-weight: 500 !important;
+    font-size: 1.54rem !important;
+    line-height: normal !important;
 }
 
 .goprojects_right_icon_container {

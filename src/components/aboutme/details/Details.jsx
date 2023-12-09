@@ -4,9 +4,6 @@ import { Grid } from '@mui/material';
 import styles from '@/components/aboutme/details/Details.module.css';
 // --
 export default function PersonalDetails(props) {
-  const baseTitle = { color: 'var(--primary-font-color)', fontSize: '2rem' };
-  const baseSubTitle = { color: 'var(--primary-font-color)', fontSize: '1.7rem' };
-  const baseText = { color: 'var(--second-font-color)', fontSize: '1.5rem' };
   const array = [
     { specification: 'Age : 24 years', id: Math.random() },
     { specification: 'Job : Freelancer', id: Math.random() },
@@ -18,23 +15,15 @@ export default function PersonalDetails(props) {
   ];
   return (
     <div className={[styles.div_vertical_positioning, styles.personal_details].join(' ')}>
-      <Typography
-        variant={'h5'}
-        sx={baseTitle}
-        className={[styles.personal_details_title, styles.greeting_tilte].join(' ')}
-      >
+      <Typography variant={'h5'} className={[styles.personal_details_title, styles.greeting_tilte].join(' ')}>
         Hello! I am Luis Felipe.
       </Typography>
-      <Typography variant={'body1'} sx={baseText} className={styles.personal_details_paragraph}>
+      <Typography variant={'body1'} className={styles.personal_details_paragraph}>
         {`I'm a passionate full stack developer who is constantly looking for new technologies to
             create innovative solutions. I stay up to date and am proactive in adapting to future
             user needs.`}
       </Typography>
-      <Typography
-        variant={'h6'}
-        sx={baseSubTitle}
-        className={[styles.personal_details_title, styles.detalis_tilte].join(' ')}
-      >
+      <Typography variant={'h6'} className={[styles.personal_details_title, styles.detalis_tilte].join(' ')}>
         Personal Details :
       </Typography>
       <Grid sx={{ justifyContent: 'space-between' }} container>

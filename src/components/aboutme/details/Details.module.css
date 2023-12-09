@@ -14,24 +14,20 @@
 }
 
 .personal_details_title {
-    font-family: var(--font-family-1);
     font-weight: 500;
-    line-height: normal;
+    /*background-color: aqua;*/
 }
 
 .greeting_tilte {
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem !important;
 }
 
 .detalis_tilte {
-    margin-bottom: 1.6rem;
-    letter-spacing: normal;
+    margin-bottom: 1.4rem !important;
 }
 
 .personal_details_paragraph {
     width: 100%;
-    font-family: var(--font-family-1);
-    margin-bottom: 2.5rem;
-    line-height: 1.5714285714285714;
+    margin-bottom: 2.2rem !important;
     text-align: center;
 }

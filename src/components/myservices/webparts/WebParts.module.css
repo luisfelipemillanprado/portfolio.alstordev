@@ -14,10 +14,7 @@
 }
 
 .web_parts_title {
-    margin-bottom: 1.6rem;
-    font-family: var(--font-family-1);
-    font-weight: 500;
-    line-height: normal;
+    margin-bottom: 1.4rem !important;
 }
 
 .web_parts_technology_container {

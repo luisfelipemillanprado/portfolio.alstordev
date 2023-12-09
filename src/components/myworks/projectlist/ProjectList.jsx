@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import styles from '@/components/myworks/projectlist/ProjectList.module.css';
 // --
 export default function ProjectList(props) {
-  const baseTitle = { color: 'var(--primary-font-color)', fontSize: '2rem' };
   const array = [
     {
       cover: 'pet-shelter',
@@ -37,7 +36,7 @@ export default function ProjectList(props) {
   ];
   return (
     <div className={[styles.div_vertical_positioning, styles.project_list_container].join(' ')}>
-      <Typography variant={'h5'} sx={baseTitle} className={styles.project_list_title}>
+      <Typography variant={'h5'} className={styles.project_list_title}>
         Projects.
       </Typography>
       <Grid direction={'row'} sx={{ justifyContent: 'space-between' }} rowGap={2.3} container>

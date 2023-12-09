@@ -4,9 +4,9 @@ import styles from '@/components/header/Header.module.css';
 // --
 export default function Header(props) {
   return (
-    <section className={styles.header}>
+    <section id='start' className={styles.header}>
       <Navigation />
-      {<Content {...{ name: 'LUIS FELIPE', text: 'DEVELOPER & DESING' }} />}
+      <Content {...{ name: 'LUIS FELIPE', text: 'DEVELOPER & DESING' }} />
     </section>
   );
 }

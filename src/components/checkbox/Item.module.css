@@ -22,6 +22,5 @@
 }
 
 .item_text {
-    font-family: var(--font-family-1);
-    line-height: normal;
+    line-height: normal !important;
 }

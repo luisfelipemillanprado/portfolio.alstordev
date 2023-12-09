@@ -7,6 +7,11 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
+.profile_card {
+    width: 20.875rem;
+    height: 18.2rem;
+}
+
 .profile_avatar_container {
     width: 100%;
     height: 5.6rem;
@@ -22,7 +27,7 @@
     position: absolute;
     justify-content: center;
     top: -7rem;
-    left: 2.9rem;
+    /*left: 2.9rem;*/
     background-color: var(--secondary-background-border);
 }
 
@@ -40,10 +45,9 @@
 }
 
 .profile_card_title {
-    line-height: 1.57;
-    font-weight: 500;
+    width: auto;
 }
 
 .profile_card_paragraph {
-    line-height: 1.57;
+    font-size: 1.44rem !important;
 }

@@ -8,7 +8,6 @@ export default function Home() {
       <AboutMe />
       <Services />
       <Trajectory />
-      {/* <FloatingButton {...{ trigger: 'click', visibilityHeight: 1000 }} /> */}
     </>
   );
 }

@@ -1,7 +1,7 @@
 import ThemeRegistry from '@/libs/provider/ThemeRegistry';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
-import BasicPopover from '@/components/button/Floating';
+import BasicPopover from '@/components/button/floating/Floating';
 import './globals.css';
 
 export const metadata = {

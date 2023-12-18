@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 /*                               --------------------                                   */
 /*-----------------------------------*/
 .personal_details {
@@ -13,21 +19,33 @@
     /*background-color: aqua;*/
 }
 
+.container_title {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    justify-content: center;
+}
+
 .personal_details_title {
     font-weight: 500;
     /*background-color: aqua;*/
 }
 
-.greeting_tilte {
-    margin-bottom: 0.6rem !important;
+.container_details_title {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.4rem;
 }
 
-.detalis_tilte {
-    margin-bottom: 1.4rem !important;
+.container_paragraph {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    font-weight: 550;
+    color: var(--primary-font-color);
 }
 
 .personal_details_paragraph {
-    width: 100%;
-    margin-bottom: 2.2rem !important;
     text-align: center;
 }

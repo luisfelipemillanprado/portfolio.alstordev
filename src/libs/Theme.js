@@ -91,6 +91,32 @@ const theme = createTheme({
         root: ({ ownerState }) => ({ display: 'flex', flexFlow: 'column nowrap' }),
       },
     },
+    MuiDialog: {
+      defaultProps: {},
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          '& .MuiDialog-paper': {
+            backgroundColor: 'var(--first-card-background-color)',
+            borderRadius: '1.6rem',
+            boxShadow: 'var(--box-shadow)',
+            color: 'var(--second-font-color)',
+          },
+        }),
+      },
+    },
+    MuiButton: {
+      defaultProps: { variant: 'outlined' },
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          padding: '0rem 0rem 0rem 1.5rem',
+          borderRadius: '2rem',
+          fontSize: '1.4rem',
+          border: '0.1rem solid var(--second-color-icon)',
+          color: 'var(--second-font-color)',
+          '&:hover': { border: '0.1rem solid var(--second-color-icon)' },
+        }),
+      },
+    },
   },
 });
 export default theme;

@@ -3,14 +3,15 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import { Grid } from '@mui/material';
+import db from '@/utils/db/db';
 import styles from '@/components/footer/contact/Contact.module.css';
 // --
 export default function Contact() {
   const contactIcon = { fontSize: '2.1rem', color: 'var(--second-color-icon)' };
   const array = [
-    { icon: <PlaceIcon sx={contactIcon} />, text: 'Cuba, Cienfuegos', id: Math.random() },
-    { icon: <LocalPhoneIcon sx={contactIcon} rotate={90} />, text: '+53 55193306', id: Math.random() },
-    { icon: <EmailIcon sx={contactIcon} />, text: 'luisfelipemillanprado@gmail.com', id: Math.random() },
+    { icon: <PlaceIcon sx={contactIcon} />, text: db.contacts[0], id: Math.random() },
+    { icon: <LocalPhoneIcon sx={contactIcon} rotate={90} />, text: db.contacts[1], id: Math.random() },
+    { icon: <EmailIcon sx={contactIcon} />, text: db.contacts[2], id: Math.random() },
   ];
   return (
     <div className={[styles.div_vertical_positioning, styles.contact].join(' ')}>

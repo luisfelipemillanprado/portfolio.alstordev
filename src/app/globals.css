@@ -20,7 +20,7 @@
   --modal-background-card: #111111;
   /* ------- Modals ------- */
   /* ------- Imputs ------- */
-  --imputs-background-color: #252525;
+  --imputs-background-color: #797979a1;
   /* ------- Imputs ------- */
   /* ------- Icons ------- */
   --firt-color-icon: #d7d8da;
@@ -36,6 +36,102 @@
   --second-font-color: #f3f3f3f1;
   --third-font-color: #797979;
   /* ------- Fonts ------- */
+
+
+
+  --avatar-color: #569cfc;
+  --home-main-text: #333333;
+  --details-icon-colors: #00000040;
+  /*se uso el de abajo de esto*/
+  --home-secondary-text: #474646;
+  --home-main-footer-background-color: #f5f5f5;
+  /* ------------------1------------------ */
+  --off-white: #f4f4f7;
+  /*se uso el de abajo de esto*/
+  --just-white: #ffffff;
+  /*se uso el de abajo de esto*/
+  --tonality-white-2: #e6f4ff;
+  /*se uso el de abajo de esto*/
+  --tonality-white-3: #f3f3f3;
+  /*se uso el de abajo de esto*/
+  --tonality-white-4: #d7d8da;
+  --tonality-white-5: #afb2b7;
+  --tonality-white-6: #f8f8ff;
+  /*se uso el de abajo de esto*/
+  --tonality-white-7: #fafbfd;
+  --tonality-white-8: #f6f6f6;
+  --tonality-white-9: #f9f9f9;
+  --tonality-white-10: #eff3f2;
+  /*se uso el de abajo de esto*/
+  --tonality-white-11: #f5f9f9;
+  /*se uso el de abajo de esto*/
+  --tonality-white-12: #eff5f3;
+  /* ------------------2------------------ */
+  --tonality-green-1: #63a91f;
+  --tonality-green-2: #c6dc93;
+  --tonality-green-3: #b0d3bf;
+  --tonality-green-4: #56c567;
+  /*se uso el de abajo de esto*/
+  --tonality-green-5: #026842;
+  /*se uso el de abajo de esto*/
+  --tonality-green-6: #19492a;
+  --tonality-green-7: #003817;
+  /*se uso el de abajo de esto*/
+  --tonality-green-8: #009d71;
+  /*se uso el de abajo de esto*/
+  --tonality-green-9: #1ba830f5;
+  --tonality-green-10: #35b148;
+  /*se uso el de abajo de esto*/
+  --tonality-green-11: #3aaf9f;
+  /*se uso el de abajo de esto*/
+  --tonality-green-12: #4cbf97;
+  /*se uso el de abajo de esto*/
+  --tonality-green-13: #25d366;
+  /* ------------------3------------------ */
+  --tonality-caqui-1: #d7cfa8;
+  --tonality-caqui-2: #e0d8b0;
+  --tonality-caqui-3: #f0e8c1;
+  --tonality-caqui-4: #9b8a57;
+  --tonality-caqui-5: #706a45;
+  --tonality-caqui-6: #fff6b4;
+  /*se uso el de abajo de esto*/
+  --tonality-caqui-7: #e5b000cc;
+  --tonality-caqui-8: #c7bd89;
+  --tonality-caqui-10: #d0c691;
+  --tonality-caqui-11: #ffeb8b;
+  --tonality-caqui-12: #ffee96;
+  /* ------------------4------------------ */
+  --tonality-purple-1: #f1e7e7;
+  --tonality-purple-2: #e7dbdb;
+  --tonality-purple-3: #cb9b9b;
+  --tonality-purple-4: #b75758;
+  /*se uso el de abajo de esto*/
+  --tonality-red-1: #f82f4d;
+  --tonality-yellow-1: #ffea81;
+  --tonality-yellow-2: #ffc107;
+  /*se uso el de abajo de esto*/
+  --tonality-grey-1: #7f7f7d;
+  /*se uso el de abajo de esto*/
+  --tonality-grey-2: #0505050f;
+  /*se uso el de abajo de esto*/
+  --tonality-grey-3: #b9bcbb;
+  /*se uso el de abajo de esto*/
+  --tonality-grey-4: #aeb2b1;
+  /*se uso el de abajo de esto*/
+  --tonality-grey-5: #ffffff3a;
+  /*se uso el de abajo de esto*/
+  --tonality-black-1: #1d2120;
+  /*se uso el de abajo de esto*/
+  --tonality-black-2: rgba(0, 0, 0, 0.226);
+  --tonality-black-3: #545c5d;
+  --tonality-turquoise-1: #81c5be;
+  /*se uso el de abajo de esto*/
+  --tonality-turquoise-2: #8ae0db;
+  --tonality-turquoise-3: #4db8c0;
+  --tonality-turquoise-4: #40cfff;
+  --tonality-turquoise-5: #7cdaf9;
+  /*se uso el de abajo de esto*/
+  --tonality-turquoise-8: #1677ff;
 }
 
 * {

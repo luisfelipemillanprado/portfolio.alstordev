@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import blurUrl from '@/utils/Blurs';
+import blurUrl from '@/utils/blurs/Blurs';
 import styles from '@/components/cards/profile/Profile.module.css';
 // --
 export default function Profile(props) {

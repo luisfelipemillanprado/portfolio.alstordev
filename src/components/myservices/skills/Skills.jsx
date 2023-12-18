@@ -2,35 +2,17 @@ import Advance from '@/components/myservices/skills/advance/Advance';
 import Teamwork from '@/components/myservices/skills/teamwork/Teamwork';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
+import db from '@/utils/db/db';
 import styles from '@/components/myservices/skills/Skills.module.css';
 // --
 export default function Skills(props) {
   const { skills, title } = props;
-  const technicalSkills = [
-    { icon: 'html', text: 'HTML', percent: 75, id: 1 },
-    { icon: 'css', text: 'CSS', percent: 75, id: 2 },
-    { icon: 'animation', text: 'Anim...', percent: 75, id: 3 },
-    { icon: 'javascript', text: 'JS', percent: 75, id: 4 },
-    { icon: 'figma', text: 'Figma', percent: 75, id: 5 },
-    { icon: 'react', text: 'React', percent: 75, id: 6 },
-    { icon: 'nextjs', text: 'Next', percent: 75, id: 7 },
-    { icon: 'nodejs', text: 'Node', percent: 75, id: 8 },
-    { icon: 'mongodb', text: 'Mongo', percent: 75, id: 9 },
-    { icon: 'express', text: 'Express', percent: 75, id: 10 },
-  ];
-  const softSkills = [
-    { text: 'Communication', percent: 80, id: 11 },
-    { text: 'Teamwork', percent: 75, id: 12 },
-    { text: 'Creativity', percent: 99, id: 13 },
-    { text: 'Dedication', percent: 95, id: 14 },
-    { text: 'Adaptability', percent: 75, id: 15 },
-  ];
   const arraySwitch = (skills) => {
     switch (skills) {
       case 'technical':
-        return technicalSkills;
+        return db.skills.technicalSkills;
       case 'soft':
-        return softSkills;
+        return db.skills.softSkills;
     }
   };
   return (

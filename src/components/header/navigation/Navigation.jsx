@@ -1,6 +1,6 @@
 import Logo from '@/components/logo/Logo';
 import NavLink from '@/components/link/navlink/NavLink';
-// import Email from '@/components/email/Email';
+import DialogButton from '@/components/email/form/Form';
 import { Grid } from '@mui/material';
 import styles from '@/components/header/navigation/Navigation.module.css';
 // --
@@ -26,7 +26,7 @@ export default function Navigation(props) {
             <NavLink {...{ href: '/', icon: 'build' }} />
           </Grid>
           <Grid item xs>
-            <NavLink {...{ href: '/', icon: 'send' }} />
+            <DialogButton />
           </Grid>
         </Grid>
       </div>

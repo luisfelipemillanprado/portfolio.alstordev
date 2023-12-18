@@ -1,0 +1,114 @@
+/*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.div_vertical_positioning {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.form_container {
+    padding: 0rem;
+    /* background-color: aqua;*/
+}
+
+.button {
+    padding: 0rem 0rem 0rem 0.5rem !important;
+}
+
+.button_icon {
+    font-size: 2.3rem !important;
+    color: var(--second-color-icon);
+}
+
+.form_title {
+    font-size: 2rem !important;
+    font-weight: 550;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.form_title_axiliar {
+    position: relative;
+}
+
+.form_title_icon_container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: -1.2rem;
+    left: -0.5rem;
+}
+
+.form_title_icon {
+    font-size: 1rem !important;
+    color: var(--second-color-icon);
+}
+
+.form_icon_container {
+    margin-left: 0.6rem;
+    margin-right: 0.2rem;
+    color: var(--second-color-icon);
+}
+
+.form_content {
+    gap: 1.6rem;
+    padding-bottom: 1rem !important;
+}
+
+.form_inputs_container {
+    width: 100%;
+}
+
+.form_inputs {
+    width: 100%;
+    border: 0.1rem solid var(--third-background-border);
+    color: var(--second-font-color);
+    background: var(--imputs-background-color);
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow);
+    padding: 0.6rem 1.2rem;
+    font-family: var(--font-family-1);
+}
+
+.form_inputs::placeholder {
+    color: var(--firt-color-icon);
+}
+
+.form_inputs:focus-visible {
+    outline: none;
+}
+
+.form_input_email {
+    border-radius: 0.4rem;
+}
+
+.form_input_message {
+    height: 8rem;
+    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+}
+
+.form_action {
+    justify-content: center !important;
+    padding-bottom: 2rem !important;
+}
+
+.action_axiliar {
+    background-color: var(--second-color-icon);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: -0.1rem;
+    justify-content: center;
+}
+
+.form_action_icon {
+    font-size: 2rem !important;
+    color: var(--second-font-color);
+}

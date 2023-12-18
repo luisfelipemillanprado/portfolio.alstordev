@@ -1,33 +1,67 @@
 import Items from '@/components/checkbox/Item';
 import Typography from '@mui/material/Typography';
+import MediaQuery from '@/utils/hooks/MediaQuery';
 import { Grid } from '@mui/material';
+import db from '@/utils/db/db';
 import styles from '@/components/aboutme/details/Details.module.css';
 // --
 export default function PersonalDetails(props) {
-  const array = [
-    { specification: 'Age : 24 years', id: Math.random() },
-    { specification: 'Job : Freelancer', id: Math.random() },
-    { specification: 'Email : luisfelipemillanprado@gmail.com', id: Math.random() },
-    { specification: 'Phone : +53 55193306', id: Math.random() },
-    { specification: 'Developer name : @alstordev', id: Math.random() },
-    { specification: 'Idioms : Spanish, English', id: Math.random() },
-    { specification: 'Graduate : Software Engineer', id: Math.random() },
-  ];
   return (
     <div className={[styles.div_vertical_positioning, styles.personal_details].join(' ')}>
-      <Typography variant={'h5'} className={[styles.personal_details_title, styles.greeting_tilte].join(' ')}>
-        Hello! I am Luis Felipe.
-      </Typography>
-      <Typography variant={'body1'} className={styles.personal_details_paragraph}>
-        {`I'm a passionate full stack developer who is constantly looking for new technologies to
-            create innovative solutions. I stay up to date and am proactive in adapting to future
-            user needs.`}
-      </Typography>
-      <Typography variant={'h6'} className={[styles.personal_details_title, styles.detalis_tilte].join(' ')}>
-        Personal Details :
-      </Typography>
+      <div className={[styles.div_horizontal_positioning, styles.container_title].join(' ')}>
+        <Typography variant={'h5'} className={styles.personal_details_title}>
+          Hello! I am Luis Felipe.
+        </Typography>
+      </div>
+      <div className={[styles.div_horizontal_positioning, styles.container_paragraph].join(' ')}>
+        <Typography variant={'body1'} className={styles.personal_details_paragraph}>
+          I am a passionate{' '}
+          <MediaQuery
+            {...{
+              query: '(min-width:320px) and (max-width:359px)',
+              children: <span>full stack developer </span>,
+            }}
+          />{' '}
+          <MediaQuery
+            {...{
+              query: '(min-width:360px) and (max-width:370px)',
+              children: <span className={styles.highlight}>full stack developer </span>,
+            }}
+          />{' '}
+          <MediaQuery
+            {...{
+              query: '(min-width:371px) and (max-width:390px)',
+              children: (
+                <span className={styles.highlight}>
+                  {'< '}full stack developer{' >'}{' '}
+                </span>
+              ),
+            }}
+          />{' '}
+          <MediaQuery
+            {...{
+              query: '(min-width:391px)',
+              children: (
+                <span className={styles.highlight}>
+                  {'< '}full stack developer{' / >'}{' '}
+                </span>
+              ),
+            }}
+          />{' '}
+          who is constantly looking for new technologies to create innovative solutions. I stay up to date and
+          am proactive in adapting to future user needs.
+        </Typography>
+      </div>
+      <div className={[styles.div_horizontal_positioning, styles.container_details_title].join(' ')}>
+        <Typography
+          variant={'h6'}
+          className={[styles.personal_details_title, styles.details_tilte].join(' ')}
+        >
+          Personal Details :
+        </Typography>
+      </div>
       <Grid sx={{ justifyContent: 'space-between' }} container>
-        {array.map((element) => {
+        {db.details.map((element) => {
           return (
             <Grid key={element.id} item>
               <Items params={{ item: element.specification }} />
@@ -38,3 +72,15 @@ export default function PersonalDetails(props) {
     </div>
   );
 }
+/* 375 <span className={styles.highlight}>
+            {'< '}full stack developer{' > '}
+          </span>
+          ---------------------------------
+   393 <span className={styles.highlight}>
+            {' < '}full stack developer{' / > '}
+          </span>        
+            {useMediaQuery('(min-width:600px)') ? (
+            <span className={styles.highlight}>full stack developer </span>
+          ) : (
+            'hola ok'
+          )} */

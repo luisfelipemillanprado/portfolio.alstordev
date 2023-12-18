@@ -16,7 +16,7 @@
 
 .goprojects_link {
     padding: 0.5rem 1.4rem;
-    border: 0.1rem solid var(--third-background-border);
+    border: 0.1rem solid var(--primary-background-border);
     background-color: transparent;
     border-radius: 2rem;
     justify-content: center;

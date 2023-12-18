@@ -6,7 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
-import blurUrl from '@/utils/Blurs';
+import blurUrl from '@/utils/blurs/Blurs';
 import styles from '@/components/cards/project/Project.module.css';
 // --
 export default function Project(props) {

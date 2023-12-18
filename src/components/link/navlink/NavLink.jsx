@@ -2,7 +2,6 @@ import Link from 'next/link';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import styles from '@/components/link/navlink/NavLink.module.css';
 // --
 export default function NavLink(props) {
@@ -22,10 +21,6 @@ export default function NavLink(props) {
       case 'build':
         return {
           icon: <BuildOutlinedIcon sx={navlinkIcon} />,
-        };
-      case 'send':
-        return {
-          icon: <SendOutlinedIcon sx={navlinkIcon} />,
         };
     }
   };

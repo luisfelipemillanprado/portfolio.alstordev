@@ -99,5 +99,12 @@ const db = {
     },
   ],
   contacts: ['Cuba, Cienfuegos', '+53 55193306', 'luisfelipemillanprado@gmail.com'],
+  alertEmailMessage: {
+    error: 'Check your internet and try again',
+    success: 'Message sent succesfully',
+    default: 'Internal error, try again later',
+  },
+  alertEmailType: { error: 'error', warning: 'warning', success: 'success' },
+  alertTypeError: { connectTimeout: 'UND_ERR_CONNECT_TIMEOUT', notConnect: 'EAI_AGAIN' },
 };
 export default db;

@@ -29,6 +29,7 @@
 
 .form_title {
     font-size: 2rem !important;
+    padding-bottom: 0.5rem !important;
     font-weight: 550;
     justify-content: center;
     gap: 0.6rem;
@@ -42,7 +43,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    top: -1.2rem;
+    top: -1.3rem;
     left: -0.5rem;
 }
 
@@ -59,11 +60,12 @@
 
 .form_content {
     gap: 1.6rem;
-    padding-bottom: 1rem !important;
+    padding-bottom: 1.6rem !important;
 }
 
 .form_inputs_container {
     width: 100%;
+    margin-top: 1rem;
 }
 
 .form_inputs {
@@ -111,4 +113,10 @@
 .form_action_icon {
     font-size: 2rem !important;
     color: var(--second-font-color);
+}
+
+.form_action_loader {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: var(--primary-font-color) !important;
 }

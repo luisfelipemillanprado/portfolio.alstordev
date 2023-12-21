@@ -96,16 +96,16 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ ownerState }) => ({
           '& .MuiDialog-paper': {
-            backgroundColor: 'var(--first-card-background-color)',
-            borderRadius: '1.6rem',
+            backgroundImage: 'var(--dialog-background-color)',
+            borderRadius: '0.8rem',
             boxShadow: 'var(--box-shadow)',
             color: 'var(--second-font-color)',
           },
         }),
       },
     },
-    MuiButton: {
-      defaultProps: { variant: 'outlined' },
+    MuiIconButton: {
+      defaultProps: {},
       styleOverrides: {
         root: ({ ownerState }) => ({
           padding: '0rem 0rem 0rem 1.5rem',
@@ -114,6 +114,21 @@ const theme = createTheme({
           border: '0.1rem solid var(--second-color-icon)',
           color: 'var(--second-font-color)',
           '&:hover': { border: '0.1rem solid var(--second-color-icon)' },
+        }),
+      },
+    },
+    MuiTextField: {
+      defaultProps: { fullWidth: true },
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          // cambia el color del label del inputs.
+          '& label.Mui-focused': {
+            color: 'var(--primary-font-color)',
+          },
+          // cambia el color del border del input
+          '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: 'var(--primary-background-border)' } },
+          // cambia el color de la letra del input
+          '& div': { color: 'var(--second-font-color)' },
         }),
       },
     },

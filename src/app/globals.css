@@ -21,6 +21,7 @@
   /* ------- Modals ------- */
   /* ------- Imputs ------- */
   --imputs-background-color: #797979a1;
+  --dialog-background-color: linear-gradient(to left bottom, #252a30d4, #272b31, #282b31de, #2a2c32, #2b2d32, #2a2c31, #292a2f, #28292e, #25262b, #212227, #1e1f24de, #1b1c21);
   /* ------- Imputs ------- */
   /* ------- Icons ------- */
   --firt-color-icon: #d7d8da;
@@ -118,11 +119,11 @@
   /*se uso el de abajo de esto*/
   --tonality-grey-4: #aeb2b1;
   /*se uso el de abajo de esto*/
-  --tonality-grey-5: #ffffff3a;
+  --tonality-grey-5: #ffffffd7;
   /*se uso el de abajo de esto*/
   --tonality-black-1: #1d2120;
   /*se uso el de abajo de esto*/
-  --tonality-black-2: rgba(0, 0, 0, 0.226);
+  --tonality-black-2: rgba(0, 0, 0, 0.733);
   --tonality-black-3: #545c5d;
   --tonality-turquoise-1: #81c5be;
   /*se uso el de abajo de esto*/

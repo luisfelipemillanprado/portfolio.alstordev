@@ -25,3 +25,12 @@
     justify-content: center;
     column-gap: 1.2rem;
 }
+
+.navigation_button {
+    padding: 0rem 0rem 0rem 0.5rem !important;
+}
+
+.navigation_button_icon {
+    font-size: 2.3rem !important;
+    color: var(--second-color-icon);
+}

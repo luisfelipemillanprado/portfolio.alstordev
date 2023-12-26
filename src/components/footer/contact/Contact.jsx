@@ -15,11 +15,15 @@ export default function Contact() {
   ];
   return (
     <div className={[styles.div_vertical_positioning, styles.contact].join(' ')}>
-      <Typography variant={'h5'} className={styles.contact_title}>{`Don't be shy.`}</Typography>
-      <Typography variant={'body1'} className={styles.contact_paragraph}>
-        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
-        opportunities to be part of your visions.
-      </Typography>
+      <div className={[styles.div_horizontal_positioning, styles.contact_container_title].join(' ')}>
+        <Typography variant={'h5'} className={styles.contact_title}>{`Don't be shy.`}</Typography>
+      </div>
+      <div className={[styles.div_horizontal_positioning, styles.contact_container_paragraph].join(' ')}>
+        <Typography variant={'body1'} className={styles.contact_paragraph}>
+          Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
+          opportunities to be part of your visions.
+        </Typography>
+      </div>
       <Grid direction={'column'} rowGap={1} container>
         {array.map((element) => {
           return (

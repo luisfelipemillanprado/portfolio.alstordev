@@ -18,17 +18,9 @@
     /* background-color: aqua;*/
 }
 
-.button {
-    padding: 0rem 0rem 0rem 0.5rem !important;
-}
-
-.button_icon {
-    font-size: 2.3rem !important;
-    color: var(--second-color-icon);
-}
-
 .form_title {
     font-size: 2rem !important;
+    padding-top: 2rem !important;
     padding-bottom: 0.5rem !important;
     font-weight: 550;
     justify-content: center;
@@ -98,7 +90,11 @@
 
 .form_action {
     justify-content: center !important;
-    padding-bottom: 2rem !important;
+    padding-bottom: 2.2rem !important;
+}
+
+.form_action_send_button {
+    border: 0.1rem solid var(--second-color-icon) !important;
 }
 
 .action_axiliar {
@@ -119,4 +115,8 @@
     width: 2rem !important;
     height: 2rem !important;
     color: var(--primary-font-color) !important;
+}
+
+.form_error_text {
+    font-size: 1.4rem;
 }

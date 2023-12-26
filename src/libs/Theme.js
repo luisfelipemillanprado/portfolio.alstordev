@@ -7,18 +7,60 @@ import { createTheme } from '@mui/material/styles';
 }); */
 // --
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      m320: 0,
+      m360: 360,
+      m375: 375,
+      m390: 390,
+      m410: 410,
+      m480: 480,
+      t600: 600,
+      t900: 900,
+      p1200: 1200,
+      p1536: 1536,
+    },
+  },
   typography: {
     fontFamily: 'var(--font-family-1)',
-    h5: { fontSize: '2rem', color: 'var(--primary-font-color)', fontWeight: 500, lineHeight: 1.57 },
-    h6: { fontSize: '1.7rem', color: 'var(--primary-font-color)', lineHeight: 1.57 },
-    body1: { fontSize: '1.5rem', color: 'var(--second-font-color)' },
-    body2: { fontSize: '1.5rem', color: 'var(--second-font-color)', lineHeight: 1.5 },
+    h5: {
+      fontSize: '2rem',
+      color: 'var(--primary-font-color)',
+      fontWeight: 500,
+      lineHeight: 1.57,
+      '@media screen and (min-width:390px)': {
+        fontSize: '2.1rem',
+      },
+    },
+    h6: {
+      fontSize: '1.7rem',
+      color: 'var(--primary-font-color)',
+      lineHeight: 1.57,
+      '@media screen and (min-width:390px)': {
+        fontSize: '1.76rem',
+      },
+    },
+    body1: {
+      fontSize: '1.5rem',
+      color: 'var(--second-font-color)',
+      '@media screen and (min-width:390px)': {
+        fontSize: '1.54rem',
+      },
+    },
+    body2: {
+      fontSize: '1.5rem',
+      color: 'var(--second-font-color)',
+      lineHeight: 1.5,
+      '@media screen and (min-width:390px)': {
+        fontSize: '1.54rem',
+      },
+    },
   },
   components: {
     MuiCard: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          borderRadius: '0.8rem',
+          borderRadius: 'var(--basic-border-radius)',
           boxShadow: 'var(--box-shadow)',
           color: 'var(--second-font-color)',
           '& .MuiCardHeader-action': { alignSelf: 'auto', margin: 'auto' },
@@ -35,10 +77,13 @@ const theme = createTheme({
     MuiLinearProgress: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          borderRadius: '5rem',
+          borderRadius: 'var(--linear-progress-border-radius)',
           height: '0.6rem',
           backgroundColor: 'var(--third-card-background-color)',
-          '& .MuiLinearProgress-bar': { backgroundColor: 'var(--second-color-icon)', borderRadius: '5rem' },
+          '& .MuiLinearProgress-bar': {
+            backgroundColor: 'var(--second-color-icon)',
+            borderRadius: 'var(--linear-progress-border-radius)',
+          },
         }),
       },
     },
@@ -97,7 +142,7 @@ const theme = createTheme({
         root: ({ ownerState }) => ({
           '& .MuiDialog-paper': {
             backgroundImage: 'var(--dialog-background-color)',
-            borderRadius: '0.8rem',
+            borderRadius: 'var(--basic-border-radius)',
             boxShadow: 'var(--box-shadow)',
             color: 'var(--second-font-color)',
           },
@@ -109,11 +154,9 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ ownerState }) => ({
           padding: '0rem 0rem 0rem 1.5rem',
-          borderRadius: '2rem',
+          borderRadius: 'var(--linear-progress-border-radius)',
           fontSize: '1.4rem',
-          border: '0.1rem solid var(--second-color-icon)',
           color: 'var(--second-font-color)',
-          '&:hover': { border: '0.1rem solid var(--second-color-icon)' },
         }),
       },
     },
@@ -126,11 +169,26 @@ const theme = createTheme({
             color: 'var(--primary-font-color)',
           },
           // cambia el color del border del input
-          '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: 'var(--primary-background-border)' } },
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': { borderColor: 'var(--primary-background-border)' },
+          },
           // cambia el color de la letra del input
           '& div': { color: 'var(--second-font-color)' },
+          '& input': { padding: '1.46rem 1.4rem' },
         }),
       },
+    },
+    MuiAlert: {
+      defaultProps: { elevation: 6, variant: 'filled' },
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          borderRadius: 'var(--basic-border-radius)',
+        }),
+      },
+    },
+    MuiFormHelperText: {
+      defaultProps: {},
+      styleOverrides: { root: ({ ownerState }) => ({ marginLeft: '0.1rem' }) },
     },
   },
 });

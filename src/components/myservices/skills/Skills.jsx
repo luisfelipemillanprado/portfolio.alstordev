@@ -17,17 +17,26 @@ export default function Skills(props) {
   };
   return (
     <div className={[styles.div_vertical_positioning, styles.skills_container].join(' ')}>
-      <Typography variant={'h6'} className={styles.skills_tilte}>
-        {title}
-      </Typography>
+      <div className={[styles.div_horizontal_positioning, styles.skills_container_title].join(' ')}>
+        <Typography variant={'h6'} className={styles.skills_tilte}>
+          {title}
+        </Typography>
+      </div>
       <Grid sx={{ justifyContent: 'space-between' }} columnGap={2} rowGap={2} container>
         {arraySwitch(skills).map((skill) => {
           return (
             <Grid item key={skill.id}>
               {skills === 'soft' ? (
-                <Teamwork {...{ text: skill.text, percent: skill.percent }} />
+                <Teamwork {...{ text: skill.text, percent: skill.percent, ariaLabel: skill.ariaLabel }} />
               ) : (
-                <Advance {...{ icon: skill.icon, text: skill.text, percent: skill.percent }} />
+                <Advance
+                  {...{
+                    icon: skill.icon,
+                    text: skill.text,
+                    percent: skill.percent,
+                    ariaLabel: skill.ariaLabel,
+                  }}
+                />
               )}
             </Grid>
           );

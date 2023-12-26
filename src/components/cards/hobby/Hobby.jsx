@@ -14,40 +14,39 @@ import styles from '@/components/cards/hobby/Hobby.module.css';
 export default function Hobby(props) {
   const { hobby } = props;
   const baseCard = { backgroundColor: 'var(--second-card-background-color)' };
-  const baseIcon = { fontSize: '2.2rem', color: 'var(--second-font-color)' };
   const iconSwitch = (hobby) => {
     switch (hobby) {
       case 'CINEMA':
         return {
-          icon: <MovieIcon sx={baseIcon} />,
+          icon: <MovieIcon className={styles.hobby_icon} />,
         };
       case 'COFFEE':
         return {
-          icon: <CoffeeIcon sx={baseIcon} />,
+          icon: <CoffeeIcon className={styles.hobby_icon} />,
         };
       case 'CARS':
         return {
-          icon: <DirectionsCarIcon sx={baseIcon} />,
+          icon: <DirectionsCarIcon className={styles.hobby_icon} />,
         };
       case 'MUSIC':
         return {
-          icon: <HeadphonesIcon sx={baseIcon} />,
+          icon: <HeadphonesIcon className={styles.hobby_icon} />,
         };
       case 'SPORTS':
         return {
-          icon: <SportsBasketballIcon sx={baseIcon} />,
+          icon: <SportsBasketballIcon className={styles.hobby_icon} />,
         };
       case 'MAC OS':
         return {
-          icon: <AppleIcon sx={baseIcon} />,
+          icon: <AppleIcon className={styles.hobby_icon} />,
         };
       case 'READ':
         return {
-          icon: <MenuBookIcon sx={baseIcon} />,
+          icon: <MenuBookIcon className={styles.hobby_icon} />,
         };
       case 'TRAVEL':
         return {
-          icon: <FlightIcon sx={baseIcon} />,
+          icon: <FlightIcon className={styles.hobby_icon} />,
         };
     }
   };
@@ -59,7 +58,7 @@ export default function Hobby(props) {
       </div>
       <CardContent sx={{ padding: '0rem 2rem 1.6rem 2rem !important' }}>
         <div className={[styles.div_horizontal_positioning, styles.hobby_title_container].join(' ')}>
-          <Typography variant='body2' className={styles.hobby_card_title}>
+          <Typography variant={'body2'} className={styles.hobby_card_title}>
             {hobby}
           </Typography>
         </div>

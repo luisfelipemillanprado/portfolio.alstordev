@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.technology_icon {
+    color: var(--second-color-icon) !important;
+    font-size: 1.8rem !important;
+}
+
 .technology_phrase {
     margin-bottom: 1.4rem !important;
 }

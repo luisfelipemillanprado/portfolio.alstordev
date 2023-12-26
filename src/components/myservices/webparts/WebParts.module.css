@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 /*                               --------------------                                   */
 /*-----------------------------------*/
 .web_parts_container {
@@ -13,8 +19,10 @@
     /*background-color: aquamarine;*/
 }
 
-.web_parts_title {
-    margin-bottom: 1.4rem !important;
+.web_parts_container_title {
+    width: 100%;
+    margin-bottom: 1.1rem;
+    justify-content: center;
 }
 
 .web_parts_technology_container {

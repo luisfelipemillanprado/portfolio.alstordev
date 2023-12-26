@@ -1,4 +1,10 @@
 /*                              ----------------------                                   */
+.div_horizontal_positioning {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 .div_vertical_positioning {
     display: flex;
     flex-flow: column nowrap;
@@ -13,8 +19,10 @@
     /*background-color: azure;*/
 }
 
-.skills_tilte {
-    margin-bottom: 1.4rem !important;
+.skills_container_title {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1.4rem;
 }
 
 .skills_advance_container {

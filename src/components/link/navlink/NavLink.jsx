@@ -5,7 +5,7 @@ import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
 import styles from '@/components/link/navlink/NavLink.module.css';
 // --
 export default function NavLink(props) {
-  const { href, icon } = props;
+  const { href, icon, ariaLabel } = props;
   const homeIcon = { fontSize: '2.4rem', color: 'var(--second-color-icon)' };
   const navlinkIcon = { fontSize: '2.1rem', color: 'var(--second-color-icon)' };
   const iconSwitch = (icon) => {
@@ -25,7 +25,11 @@ export default function NavLink(props) {
     }
   };
   return (
-    <Link className={[styles.div_horizontal_positioning, styles.navlink].join(' ')} href={href}>
+    <Link
+      aria-label={ariaLabel}
+      className={[styles.div_horizontal_positioning, styles.navlink].join(' ')}
+      href={href}
+    >
       {iconSwitch(icon).icon}
     </Link>
   );

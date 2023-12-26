@@ -1,7 +1,9 @@
 import Logo from '@/components/logo/Logo';
 import NavLink from '@/components/link/navlink/NavLink';
-import DialogButton from '@/components/email/form/Form';
+import Form from '@/components/email/form/Form';
+import IconButton from '@mui/material/IconButton';
 import { Grid } from '@mui/material';
+import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import styles from '@/components/header/navigation/Navigation.module.css';
 // --
 export default function Navigation(props) {
@@ -16,17 +18,25 @@ export default function Navigation(props) {
           container
           minHeight={22}
         >
-          <Grid item xs>
-            <NavLink {...{ href: '/', icon: 'home' }} />
+          <Grid item>
+            <NavLink {...{ href: '/', icon: 'home', ariaLabel: 'Go to homepage' }} />
           </Grid>
-          <Grid item xs>
-            <NavLink {...{ href: '/', icon: 'info' }} />
+          <Grid item>
+            <NavLink {...{ href: '/', icon: 'info', ariaLabel: 'Go to information section' }} />
           </Grid>
-          <Grid item xs>
-            <NavLink {...{ href: '/', icon: 'build' }} />
+          <Grid item>
+            <NavLink {...{ href: '/', icon: 'build', ariaLabel: 'Go to skills section' }} />
           </Grid>
-          <Grid item xs>
-            <DialogButton />
+          <Grid item>
+            <IconButton
+              id={'btn-form-start'}
+              aria-label={'btn-form-email'}
+              role={'button'}
+              className={styles.navigation_button}
+            >
+              <SendOutlinedIcon className={styles.navigation_button_icon} />
+            </IconButton>
+            <Form />
           </Grid>
         </Grid>
       </div>

@@ -53,10 +53,7 @@ export default function PersonalDetails(props) {
         </Typography>
       </div>
       <div className={[styles.div_horizontal_positioning, styles.container_details_title].join(' ')}>
-        <Typography
-          variant={'h6'}
-          className={[styles.personal_details_title, styles.details_tilte].join(' ')}
-        >
+        <Typography variant={'h6'} className={styles.details_tilte}>
           Personal Details :
         </Typography>
       </div>
@@ -72,15 +69,3 @@ export default function PersonalDetails(props) {
     </div>
   );
 }
-/* 375 <span className={styles.highlight}>
-            {'< '}full stack developer{' > '}
-          </span>
-          ---------------------------------
-   393 <span className={styles.highlight}>
-            {' < '}full stack developer{' / > '}
-          </span>        
-            {useMediaQuery('(min-width:600px)') ? (
-            <span className={styles.highlight}>full stack developer </span>
-          ) : (
-            'hola ok'
-          )} */

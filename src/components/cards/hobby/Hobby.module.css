@@ -8,7 +8,7 @@
 /*                               --------------------                                   */
 /*-----------------------------------*/
 .hobby_card {
-    width: 9.8rem;
+    width: 9.7rem;
 }
 
 .hobby_title_container {
@@ -23,4 +23,38 @@
 .hobby_icon_container {
     padding: 1.45rem 2rem;
     justify-content: center;
+}
+
+.hobby_icon {
+    font-size: 2.2rem !important;
+    color: var(--second-font-color);
+}
+
+/*-----------------------------------*/
+@media screen and (min-width:375px) {
+    .hobby_card {
+        width: 9.8rem;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .hobby_card {
+        width: 10.5rem;
+        height: 8.6rem;
+    }
+
+    .hobby_card_title {
+        font-size: 1.44rem !important;
+    }
+
+    .hobby_icon {
+        font-size: 2.34rem !important;
+    }
+}
+
+@media screen and (min-width:410px) {
+    .hobby_card {
+        width: 10.9rem;
+        height: 8.9rem;
+    }
 }

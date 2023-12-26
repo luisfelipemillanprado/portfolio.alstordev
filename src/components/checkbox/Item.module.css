@@ -21,6 +21,18 @@
     height: 1.8rem;
 }
 
+.item_icon {
+    font-size: 1.5rem !important;
+    color: var(--firt-color-icon) !important;
+}
+
 .item_text {
     line-height: normal !important;
+}
+
+/*-----------------------------------*/
+@media screen and (min-width:390px) {
+    .item_icon {
+        font-size: 1.6rem !important;
+    }
 }

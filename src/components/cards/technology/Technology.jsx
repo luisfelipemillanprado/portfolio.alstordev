@@ -11,24 +11,23 @@ import styles from '@/components/cards/technology/Technology.module.css';
 export default function Technology(props) {
   const { icon, title, phrase, projects } = props;
   const baseCard = { backgroundColor: 'var(--second-card-background-color)' };
-  const baseIcon = { color: 'var(--second-color-icon)', fontSize: '1.8rem' };
   const iconSwitch = (icon) => {
     switch (icon) {
       case 'design':
         return {
-          icon: <DesignServicesIcon sx={baseIcon} />,
+          icon: <DesignServicesIcon className={styles.technology_icon} />,
         };
       case 'front-end':
         return {
-          icon: <CodeOffIcon sx={baseIcon} />,
+          icon: <CodeOffIcon className={styles.technology_icon} />,
         };
       case 'back-end':
         return {
-          icon: <DataObjectIcon sx={baseIcon} />,
+          icon: <DataObjectIcon className={styles.technology_icon} />,
         };
       case 'seo':
         return {
-          icon: <GpsFixedIcon sx={baseIcon} />,
+          icon: <GpsFixedIcon className={styles.technology_icon} />,
         };
     }
   };

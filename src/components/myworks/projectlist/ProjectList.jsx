@@ -13,7 +13,7 @@ export default function ProjectList(props) {
       <Grid direction={'row'} sx={{ justifyContent: 'space-between' }} rowGap={2.3} container>
         {db.projects.map((element) => {
           return (
-            <Grid item xs={5.6} key={element.id}>
+            <Grid item m360={5.6} key={element.id}>
               <Project
                 {...{
                   cover: element.cover,

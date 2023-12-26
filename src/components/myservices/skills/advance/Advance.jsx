@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import styles from '@/components/myservices/skills/advance/Advance.module.css';
 // --
 export default function Advance(props) {
-  const { icon, text, percent } = props;
+  const { icon, text, percent, ariaLabel } = props;
   const iconSwitch = (icon) => {
     switch (icon) {
       case 'html':
@@ -63,10 +63,19 @@ export default function Advance(props) {
     <div className={[styles.div_vertical_positioning, styles.advance_container].join(' ')}>
       <div className={styles.advance_wrapper_image_progress}>
         <div className={styles.advance_wrapper_progress}>
-          <CircularProgress className={styles.advance_base_progress} variant={'determinate'} value={100} />
           <CircularProgress
-            className={[styles.advance_base_progress, styles.advance_progress].join(' ')}
+            role={'progressbar'}
+            aria-label={ariaLabel}
+            className={styles.advance_base_progress}
             variant={'determinate'}
+            value={100}
+          />
+          <CircularProgress
+            role={'progressbar'}
+            aria-label={ariaLabel}
+            className={[styles.advance_base_progress, styles.advance_progress].join(' ')}
+            variant={'indeterminate'}
+            disableShrink
             value={percent}
           />
         </div>

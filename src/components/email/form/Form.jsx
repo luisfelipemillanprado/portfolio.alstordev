@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import Alert from '@/components/email/alert/Alert';
+import formValidation from '@/utils/validation/form/Form';
 import IconButton from '@mui/material/IconButton';
 import CircularProgress from '@mui/material/CircularProgress';
 import Dialog from '@mui/material/Dialog';
@@ -9,13 +10,12 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import TextField from '@mui/material/TextField';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import FiberManualRecordRoundedIcon from '@mui/icons-material/FiberManualRecordRounded';
 import db from '@/utils/db/db';
 import styles from '@/components/email/form/Form.module.css';
 // --
 export default function Form() {
-  const inputsValueRef = useRef({ email: '', message: '' });
+  const inputsValueRef = useRef({ email: '', message: 'Hello' });
   const alertMessageRef = useRef({
     severity: db.alertEmailType.success,
     message: db.alertEmailMessage.success,
@@ -23,6 +23,16 @@ export default function Form() {
   const [openDialog, setOpenDialog] = useState(false);
   const [loading, setLoading] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);
+  const [inputError, setInputError] = useState(false);
+  useEffect(() => {
+    const startButtonForm = document.getElementById('btn-form-start');
+    const addStartButtonFormListener = (startButtonForm) => {
+      startButtonForm.addEventListener('click', handleOpenDialog, { capture: false, once: false });
+    };
+    addStartButtonFormListener(startButtonForm);
+    console.log('llego aqui');
+  }, []);
+  // --
   useEffect(() => {
     if (loading) {
       const sendEmail = async () => {
@@ -31,7 +41,6 @@ export default function Form() {
           body: JSON.stringify(inputsValueRef.current),
         });
         const data = await response.json();
-        console.log(data);
         setAlertMessage(data);
         setLoading(false);
         setOpenAlert(true);
@@ -42,16 +51,17 @@ export default function Form() {
 
   /**
    * @function handleClickOpen
-   * @param {*} event
+   * @param {Event} event
    */
   const handleOpenDialog = (event) => {
     setOpenDialog(true);
   };
   /**
    * @function handleClose
-   * @param {*} event
+   * @param {Event} event
    */
   const handleCloseDialog = (event) => {
+    setLoading(false);
     setOpenDialog(false);
   };
   /**
@@ -60,21 +70,14 @@ export default function Form() {
    */
   const setAlertMessage = (data) => {
     if (data.error) {
-      if (
-        data.error.cause.code === db.alertTypeError.connectTimeout ||
-        data.error.code === db.alertTypeError.notConnect
-      ) {
-        alertMessageRef.current.severity = db.alertEmailType.error;
-        alertMessageRef.current.message = db.alertEmailMessage.error;
-      } else {
-        alertMessageRef.current.severity = db.alertEmailType.warning;
-        alertMessageRef.current.message = db.alertEmailMessage.default;
-      }
+      alertMessageRef.current.severity = db.alertEmailType.error;
+      alertMessageRef.current.message = db.alertEmailMessage.error;
     }
   };
   /**
    * @function handleCloseAlert
-   * @param {*} event
+   * @param {Event} event
+   * @param {string} reason
    */
   const handleCloseAlert = (event, reason) => {
     if (reason === 'clickaway') {
@@ -84,7 +87,7 @@ export default function Form() {
   };
   /**
    * @function handleInputs
-   * @param {*} event
+   * @param {Event} event
    */
   const handleInputs = (event) => {
     if (event.target.id === 'email-input-dialog') {
@@ -95,16 +98,21 @@ export default function Form() {
   };
   /**
    * @function handleSendButton
-   * @param {*} event
+   * @param {Event} event
    */
-  const handleSendButton = async (event) => {
-    setLoading(true);
+  const handleSendButton = (event) => {
+    const validation = formValidation(inputsValueRef.current.email);
+    if (validation) {
+      setInputError(true);
+    } else {
+      if (inputError) {
+        setInputError(false);
+      }
+      setLoading(true);
+    }
   };
   return (
     <div className={[styles.div_horizontal_positioning, styles.form_container].join(' ')}>
-      <IconButton className={styles.button} onClick={handleOpenDialog}>
-        <SendOutlinedIcon className={styles.button_icon} />
-      </IconButton>
       <Dialog open={openDialog} onClose={handleCloseDialog} component={'form'}>
         <DialogTitle className={[styles.div_horizontal_positioning, styles.form_title].join(' ')}>
           GET IN TOUCH
@@ -114,16 +122,41 @@ export default function Form() {
             </span>
           </div>
         </DialogTitle>
-        <DialogContent className={[styles.div_vertical_positioning, styles.form_content].join(' ')}>
+        <DialogContent
+          sx={inputError ? { gap: 0 } : null}
+          className={[styles.div_vertical_positioning, styles.form_content].join(' ')}
+        >
           <div className={[styles.div_horizontal_positioning, styles.form_inputs_container].join(' ')}>
-            <TextField id='email-input-dialog' label='Email' onChange={handleInputs} />
+            <TextField
+              id={'email-input-dialog'}
+              label={'Email'}
+              error={inputError}
+              helperText={
+                inputError ? <span className={styles.form_error_text}>Enter valid email</span> : null
+              }
+              placeholder={'ex: user@gmail.com'}
+              onChange={handleInputs}
+            />
           </div>
           <div className={[styles.div_horizontal_positioning, styles.form_inputs_container].join(' ')}>
-            <TextField id='message-input-dialog' label='Message' multiline rows={4} onChange={handleInputs} />
+            <TextField
+              id={'message-input-dialog'}
+              label={'Message'}
+              multiline
+              rows={4}
+              placeholder={'ex: Hello'}
+              onChange={handleInputs}
+            />
           </div>
         </DialogContent>
         <DialogActions className={styles.form_action}>
-          <IconButton id='send-email-action-button' onClick={handleSendButton}>
+          <IconButton
+            id={'send-email-action-button'}
+            aria-label={'btn-send-email'}
+            role={'button'}
+            className={styles.form_action_send_button}
+            onClick={handleSendButton}
+          >
             SEND
             <div className={[styles.div_horizontal_positioning, styles.action_axiliar].join(' ')}>
               {loading ? (
@@ -139,7 +172,7 @@ export default function Form() {
         <Alert
           {...{
             open: openAlert,
-            autoHideDuration: 6000,
+            autoHideDuration: 5500,
             severity: alertMessageRef.current.severity,
             message: alertMessageRef.current.message,
             handleClose: handleCloseAlert,

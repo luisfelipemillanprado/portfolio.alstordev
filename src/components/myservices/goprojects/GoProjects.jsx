@@ -11,7 +11,7 @@ export default function GoProjects(props) {
         className={[styles.div_horizontal_positioning, styles.goprojects_link].join(' ')}
         href={'/worksection'}
       >
-        <Typography variant={'body2'} className={styles.goprojects_text}>
+        <Typography variant={'body1'} className={styles.goprojects_text}>
           See projects
         </Typography>
         <div

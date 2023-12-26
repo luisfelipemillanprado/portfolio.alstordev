@@ -90,7 +90,7 @@ export default function Advance(props) {
         </div>
       </div>
       <div className={[styles.div_horizontal_positioning, styles.advance_text_container].join(' ')}>
-        <Typography variant={'body2'} className={styles.advance_text}>
+        <Typography variant={'body1'} className={styles.advance_text}>
           {text}
         </Typography>
       </div>

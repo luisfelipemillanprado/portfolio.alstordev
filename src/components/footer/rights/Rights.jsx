@@ -10,7 +10,7 @@ export default function Rights() {
         @Alstordev
       </Typography>
       <Typography
-        variant={'body2'}
+        variant={'body1'}
         className={[styles.div_horizontal_positioning, styles.rights_text].join(' ')}
       >
         <CopyrightIcon sx={contactIcon} />

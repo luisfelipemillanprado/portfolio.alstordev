@@ -36,7 +36,7 @@ export default function Form() {
   useEffect(() => {
     if (loading) {
       const sendEmail = async () => {
-        const response = await fetch('/api/send', {
+        const response = await fetch('/api/email', {
           method: 'POST',
           body: JSON.stringify(inputsValueRef.current),
         });

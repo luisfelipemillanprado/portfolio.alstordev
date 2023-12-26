@@ -23,6 +23,14 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'var(--font-family-1)',
+    h4: {
+      fontSize: '1.7rem',
+      color: 'var(--primary-font-color)',
+      lineHeight: 1.57,
+      '@media screen and (min-width:390px)': {
+        fontSize: '1.72rem',
+      },
+    },
     h5: {
       fontSize: '2rem',
       color: 'var(--primary-font-color)',
@@ -43,14 +51,6 @@ const theme = createTheme({
     body1: {
       fontSize: '1.5rem',
       color: 'var(--second-font-color)',
-      '@media screen and (min-width:390px)': {
-        fontSize: '1.54rem',
-      },
-    },
-    body2: {
-      fontSize: '1.5rem',
-      color: 'var(--second-font-color)',
-      lineHeight: 1.5,
       '@media screen and (min-width:390px)': {
         fontSize: '1.54rem',
       },

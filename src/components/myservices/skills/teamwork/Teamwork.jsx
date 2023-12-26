@@ -17,7 +17,7 @@ export default function Teamwork(props) {
           variant={'indeterminate'}
           value={percent}
         />
-        <Typography variant={'body2'}>{`${percent}%`}</Typography>
+        <Typography variant={'body1'}>{`${percent}%`}</Typography>
       </div>
     </div>
   );

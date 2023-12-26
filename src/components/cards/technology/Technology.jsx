@@ -35,9 +35,7 @@ export default function Technology(props) {
   return (
     <Card sx={baseCard}>
       <CardHeader
-        sx={{
-          padding: '1.6rem 2rem 1.4rem',
-        }}
+        className={styles.technology_title}
         title={
           <Typography variant={'h6'} className={styles.technology_projects}>
             {title}
@@ -45,7 +43,7 @@ export default function Technology(props) {
         }
         action={<div className={styles.div_vertical_positioning}>{iconSwitch(icon).icon}</div>}
       />
-      <CardContent sx={{ padding: '0rem 2rem 1.6rem !important' }}>
+      <CardContent className={styles.technology_content}>
         <Typography variant={'body1'} className={styles.technology_phrase}>
           {phrase}
         </Typography>

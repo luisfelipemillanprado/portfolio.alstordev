@@ -35,7 +35,7 @@ export default function Profile(props) {
       </div>
       <CardContent sx={{ padding: '2.4rem' }}>
         <div className={[styles.div_horizontal_positioning, styles.profile_card_text_container].join(' ')}>
-          <Typography variant={'h6'} className={styles.profile_card_title}>
+          <Typography variant={'h4'} className={styles.profile_card_title}>
             {name}
           </Typography>
         </div>

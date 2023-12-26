@@ -58,7 +58,7 @@ export default function Hobby(props) {
       </div>
       <CardContent sx={{ padding: '0rem 2rem 1.6rem 2rem !important' }}>
         <div className={[styles.div_horizontal_positioning, styles.hobby_title_container].join(' ')}>
-          <Typography variant={'body2'} className={styles.hobby_card_title}>
+          <Typography variant={'body1'} className={styles.hobby_card_title}>
             {hobby}
           </Typography>
         </div>

@@ -72,3 +72,21 @@
 
 /*.advance_text {
 }*/
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+@media screen and (min-width:375px) {
+    .advance_base_progress {
+        width: 5.4rem !important;
+        height: 5.4rem !important;
+    }
+}
+
+@media screen and (min-width:390px) {
+    .advance_base_progress {
+        width: 5.7rem !important;
+        height: 5.7rem !important;
+    }
+}

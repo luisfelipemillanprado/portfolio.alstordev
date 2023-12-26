@@ -11,6 +11,10 @@
     width: 100%;
 }
 
+.technology_title {
+    padding: 1.6rem 2rem 1.4rem !important;
+}
+
 .technology_icon {
     color: var(--second-color-icon) !important;
     font-size: 1.8rem !important;
@@ -22,4 +26,15 @@
 
 .technology_projects {
     font-weight: 550 !important;
+}
+
+.technology_content {
+    padding: 0rem 2rem 1.6rem !important;
+}
+
+/*-----------------------------------*/
+@media screen and (min-width:390px) {
+    .technology_title {
+        padding: 1.6rem 2rem 1rem !important;
+    }
 }

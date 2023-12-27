@@ -90,3 +90,10 @@
         height: 5.7rem !important;
     }
 }
+
+@media screen and (min-width:400px) {
+    .advance_base_progress {
+        width: 6.1rem !important;
+        height: 6.1rem !important;
+    }
+}

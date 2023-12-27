@@ -37,7 +37,7 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1.57,
       '@media screen and (min-width:390px)': {
-        fontSize: '2.2rem',
+        fontSize: '2.1rem',
       },
     },
     h6: {
@@ -45,7 +45,7 @@ const theme = createTheme({
       color: 'var(--primary-font-color)',
       lineHeight: 1.57,
       '@media screen and (min-width:390px)': {
-        fontSize: '1.76rem',
+        fontSize: '1.78rem',
       },
     },
     body1: {

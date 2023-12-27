@@ -7,9 +7,11 @@ import styles from '@/components/myworks/projectlist/ProjectList.module.css';
 export default function ProjectList(props) {
   return (
     <div className={[styles.div_vertical_positioning, styles.project_list_container].join(' ')}>
-      <Typography variant={'h5'} className={styles.project_list_title}>
-        Projects.
-      </Typography>
+      <div className={[styles.div_vertical_positioning, styles.project_list_container_title].join(' ')}>
+        <Typography variant={'h5'} className={styles.project_list_title}>
+          Projects.
+        </Typography>
+      </div>
       <Grid direction={'row'} sx={{ justifyContent: 'space-between' }} rowGap={2.3} container>
         {db.projects.map((element) => {
           return (

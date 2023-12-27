@@ -17,15 +17,16 @@
 }
 
 .project_card_image {
-    width: 14.559rem;
-    height: 11rem;
+    width: 100%;
     object-fit: cover;
 }
 
+.project_card_content {
+    padding: 0.6rem 1.2rem 0rem 1.2rem !important;
+}
+
 .project_card_actions {
-    height: 2.2rem;
-    justify-content: center;
-    gap: 0.6rem;
+    padding: 0.2rem 1.2rem 1rem 1.2rem !important;
 }
 
 .project_card_name_container {
@@ -65,4 +66,14 @@
 
 .project_progress_text {
     line-height: 1.57 !important;
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+@media screen and (min-width:390px) {
+    .project_card_actions {
+        padding: 0.4rem 1.2rem 1rem 1.2rem !important;
+    }
 }

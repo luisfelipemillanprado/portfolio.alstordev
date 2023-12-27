@@ -25,6 +25,9 @@
 }
 
 .technology_projects {
+    font-size: 1.7rem;
+    color: var(--primary-font-color);
+    line-height: 1.57;
     font-weight: 550 !important;
 }
 
@@ -34,6 +37,10 @@
 
 /*-----------------------------------*/
 @media screen and (min-width:390px) {
+    .technology_projects {
+        font-size: 1.76rem;
+    }
+
     .technology_title {
         padding: 1.6rem 2rem 1rem !important;
     }

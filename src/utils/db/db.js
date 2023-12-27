@@ -93,7 +93,7 @@ const db = {
     {
       cover: 'ti',
       title: 'Ticket',
-      percent: 30,
+      percent: 55,
       href: 'https://github.com/luisfelipemillanprado/luisfelipemillanprado.github.io',
       id: Math.random(),
     },

@@ -18,6 +18,8 @@
     /*background-color: aquamarine;*/
 }
 
-.project_list_title {
-    margin-bottom: 1.4rem !important;
+.project_list_container_title {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    justify-content: center;
 }

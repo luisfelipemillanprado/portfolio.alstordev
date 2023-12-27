@@ -36,11 +36,7 @@ export default function Technology(props) {
     <Card sx={baseCard}>
       <CardHeader
         className={styles.technology_title}
-        title={
-          <Typography variant={'h6'} className={styles.technology_projects}>
-            {title}
-          </Typography>
-        }
+        title={<span className={styles.technology_projects}>{title}</span>}
         action={<div className={styles.div_vertical_positioning}>{iconSwitch(icon).icon}</div>}
       />
       <CardContent className={styles.technology_content}>

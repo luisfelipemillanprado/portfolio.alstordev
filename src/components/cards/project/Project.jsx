@@ -51,7 +51,7 @@ export default function Project(props) {
             />
           </Link>
         </div>
-        <CardContent sx={{ padding: '0.6rem 1.2rem 0rem 1.2rem !important' }}>
+        <CardContent className={styles.project_card_content}>
           <div className={[styles.div_horizontal_positioning, styles.project_card_name_container].join(' ')}>
             <Typography variant={'body1'} className={styles.project_card_name}>
               {title}
@@ -59,7 +59,7 @@ export default function Project(props) {
           </div>
         </CardContent>
       </CardActionArea>
-      <CardActions sx={{ padding: '0.2rem 1.2rem 1rem 1.2rem !important' }}>
+      <CardActions className={styles.project_card_actions}>
         <div className={[styles.div_horizontal_positioning, styles.project_progress_container].join(' ')}>
           <div className={[styles.div_horizontal_positioning, styles.project_progress_icon].join(' ')}>
             <CircularProgress
@@ -79,7 +79,7 @@ export default function Project(props) {
             className={[styles.div_horizontal_positioning, styles.project_progress_text_container].join(' ')}
           >
             <Typography
-              variant={'body2'}
+              variant={'body1'}
               className={styles.project_progress_text}
             >{`${percent}%`}</Typography>
           </div>

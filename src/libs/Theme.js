@@ -37,7 +37,7 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1.57,
       '@media screen and (min-width:390px)': {
-        fontSize: '2.1rem',
+        fontSize: '2.2rem',
       },
     },
     h6: {
@@ -52,7 +52,10 @@ const theme = createTheme({
       fontSize: '1.5rem',
       color: 'var(--second-font-color)',
       '@media screen and (min-width:390px)': {
-        fontSize: '1.54rem',
+        fontSize: '1.56rem',
+      },
+      '@media screen and (min-width:400px)': {
+        fontSize: '1.58rem',
       },
     },
   },
@@ -183,6 +186,9 @@ const theme = createTheme({
       styleOverrides: {
         root: ({ ownerState }) => ({
           borderRadius: 'var(--basic-border-radius)',
+          '& .mui-ptiqhd-MuiSvgIcon-root': { fontSize: '1.6rem' },
+          '& .mui-1vooibu-MuiSvgIcon-root': { fontSize: '2rem' },
+          '& .mui-1ytlwq5-MuiAlert-icon': { alignItems: 'center' },
         }),
       },
     },

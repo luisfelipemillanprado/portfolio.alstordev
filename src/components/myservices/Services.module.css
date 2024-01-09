@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -16,7 +16,7 @@
 .services {
     width: 100%;
     background-color: var(--third-section-background-color);
-    padding: 0rem 2.4rem 4rem;
+    padding: 0rem 2.4rem 5rem;
 }
 
 .services_container_all {
@@ -29,6 +29,10 @@
     /* background-color: aqua;*/
 }
 
+.wrapper_position {
+    width: 100%;
+}
+
 .services_webparts {
     width: 100%;
     /*background-color: aquamarine;*/
@@ -37,4 +41,72 @@
 .services_skills {
     width: 100%;
     /*background-color: blueviolet;*/
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .services {
+        padding: 0rem 3.2rem 5rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .services {
+        padding: 0rem 3.6rem 5rem;
+    }
+
+    .wrapper_position {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .services_webparts {
+        width: 50%;
+        padding-right: 1.7rem;
+    }
+
+    .services_skills {
+        width: 50%;
+        padding-left: 1.7rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .services {
+        padding: 0rem 4rem 5rem;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .services {
+        padding: 0rem 5.4rem 5rem;
+    }
+
+    .services_webparts {
+        padding-right: 2.7rem;
+    }
+
+    .services_skills {
+        padding-left: 3.4rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1280px) {
+    .services {
+        padding: 0rem 7rem 5rem;
+    }
+
+    .services_webparts {
+        padding-right: 2.7rem;
+    }
+
+    .services_skills {
+        padding-left: 4rem;
+    }
 }

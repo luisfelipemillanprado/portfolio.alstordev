@@ -1,17 +1,18 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
 /*                               --------------------                                   */
+/*-----------------------------------*/
 .works {
     width: 100%;
     background-color: var(--second-section-background-color);
@@ -26,4 +27,22 @@
 .works_list {
     width: 100%;
     /*background-color: antiquewhite;*/
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .works {
+        padding: 0rem 3.2rem 4rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:800px) {
+    .works {
+        padding: 0rem 3.6rem 4rem;
+    }
 }

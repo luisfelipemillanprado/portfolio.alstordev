@@ -4,33 +4,31 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import styles from '@/components/link/socialnetwork/SocialNetwork.module.css';
+import styles from '@/components/cards/profile/socialnetwork/SocialNetwork.module.css';
 // --
 export default function SocialNetwork(props) {
   const { href, icon, ariaLabel } = props;
-  const telegramIcon = { fontSize: '1.52rem', color: 'var(--firt-color-icon)' };
-  const baseIcon = { fontSize: '1.5rem', color: 'var(--firt-color-icon)' };
   const iconSwitch = (icon) => {
     switch (icon) {
       case 'twitter':
         return {
-          icon: <TwitterIcon sx={baseIcon} />,
+          icon: <TwitterIcon className={styles.social_network_icon} />,
         };
       case 'linkedin':
         return {
-          icon: <LinkedInIcon sx={baseIcon} />,
+          icon: <LinkedInIcon className={styles.social_network_icon} />,
         };
       case 'telegram':
         return {
-          icon: <TelegramIcon sx={telegramIcon} />,
+          icon: <TelegramIcon className={styles.social_network_telegram_icon} />,
         };
       case 'facebook':
         return {
-          icon: <FacebookIcon sx={baseIcon} />,
+          icon: <FacebookIcon className={styles.social_network_icon} />,
         };
       case 'github':
         return {
-          icon: <GitHubIcon sx={baseIcon} />,
+          icon: <GitHubIcon className={styles.social_network_icon} />,
         };
     }
   };
@@ -38,10 +36,10 @@ export default function SocialNetwork(props) {
   return (
     <Link
       aria-label={ariaLabel}
-      className={[styles.div_horizontal_positioning, styles.social_network_link].join(' ')}
+      className={[styles.horizontal, styles.social_network_link].join(' ')}
       href={href}
     >
-      <span className={styles.div_horizontal_positioning} style={{ justifyContent: 'center' }}>
+      <span className={styles.horizontal} style={{ justifyContent: 'center' }}>
         {iconSwitch(icon).icon}
       </span>
     </Link>

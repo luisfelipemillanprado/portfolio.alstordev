@@ -7,34 +7,29 @@ import styles from '@/components/badge/Badge.module.css';
 // --
 export default function Badges(props) {
   const { icon } = props;
-  const badgeIcon = { fontSize: '2.2rem', color: 'var(--second-color-icon)' };
-  const buildIcon = { fontSize: '2rem', color: 'var(--second-color-icon)' };
-  const historyIcon = { fontSize: '2.4rem', color: 'var(--second-color-icon)' };
   const iconSwitch = (icon) => {
     switch (icon) {
       case 'info':
         return {
-          icon: <InfoIcon sx={badgeIcon} />,
+          icon: <InfoIcon className={styles.badge_icon} />,
         };
       case 'skills':
         return {
-          icon: <BuildIcon sx={buildIcon} />,
+          icon: <BuildIcon className={styles.build_icon} />,
         };
       case 'trajectory':
         return {
-          icon: <HistoryIcon sx={historyIcon} />,
+          icon: <HistoryIcon className={styles.history_icon} />,
         };
       case 'contact':
         return {
-          icon: <EmailIcon sx={badgeIcon} />,
+          icon: <EmailIcon className={styles.badge_icon} />,
         };
     }
   };
   return (
-    <div className={[styles.div_horizontal_positioning, styles.badge_container].join(' ')}>
-      <Badge className={[styles.div_horizontal_positioning, styles.badge].join(' ')}>
-        {iconSwitch(icon).icon}
-      </Badge>
+    <div className={[styles.horizontal, styles.badge_container].join(' ')}>
+      <Badge className={[styles.horizontal, styles.badge].join(' ')}>{iconSwitch(icon).icon}</Badge>
     </div>
   );
 }

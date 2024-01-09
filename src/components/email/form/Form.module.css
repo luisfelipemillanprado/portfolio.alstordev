@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -80,12 +80,7 @@
 }
 
 .form_input_email {
-    border-radius: 0.4rem;
-}
-
-.form_input_message {
-    height: 8rem;
-    border-radius: 0.4rem 0.4rem 0rem 0.4rem;
+    border-radius: var(--small-border-radius);
 }
 
 .form_action {
@@ -95,11 +90,12 @@
 
 .form_action_send_button {
     border: 0.1rem solid var(--second-color-icon) !important;
+    border-radius: var(--half-border-radius) !important;
 }
 
 .action_axiliar {
     background-color: var(--second-color-icon);
-    border-radius: 2rem;
+    border-radius: var(--half-border-radius);
     padding: 0.5rem;
     margin-left: 1rem;
     margin-right: -0.1rem;

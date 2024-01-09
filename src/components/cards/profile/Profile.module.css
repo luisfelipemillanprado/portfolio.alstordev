@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -55,6 +55,7 @@
 /*                              ------------------------------------------------                                   */
 /*                                                   MEDIA-QUERIES...                                              */
 /*                              ------------------------------------------------                                   */
+/*                   ------------------------Mobile------------------------                         */
 @media screen and (min-width:390px) {
     .profile_card {
         width: 21.1rem;
@@ -62,5 +63,15 @@
 
     .profile_card_paragraph {
         font-size: 1.46rem !important;
+    }
+}
+
+@media screen and (min-width:450px) {
+    .profile_card {
+        width: 21.3rem;
+    }
+
+    .profile_card_paragraph {
+        font-size: 1.47rem !important;
     }
 }

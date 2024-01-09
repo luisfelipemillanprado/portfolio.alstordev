@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -15,6 +15,7 @@
 /*-----------------------------------*/
 .hobbies_container {
     width: 100%;
+    margin-bottom: 3.2rem;
     /*background-color: azure;*/
 }
 
@@ -23,3 +24,14 @@
     justify-content: center;
     margin-bottom: 1.4rem;
 }
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Desktop------------------------                         */
+/*@media screen and (min-width:1200px) {
+    .hobbies_container_title {
+        justify-content: flex-start;
+    }
+}*/

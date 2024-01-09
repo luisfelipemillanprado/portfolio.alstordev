@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex !important;
     flex-flow: row nowrap;
     align-items: center;
@@ -23,4 +23,19 @@
     justify-content: center;
     box-shadow: var(--box-shadow);
     background-color: var(--third-card-background-color);
+}
+
+.badge_icon {
+    font-size: 2.2rem !important;
+    color: var(--second-color-icon);
+}
+
+.build_icon {
+    font-size: 2rem !important;
+    color: var(--second-color-icon);
+}
+
+.history_icon {
+    font-size: 2.4rem !important;
+    color: var(--second-color-icon);
 }

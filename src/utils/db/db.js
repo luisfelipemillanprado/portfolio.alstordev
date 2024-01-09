@@ -14,9 +14,10 @@ const db = {
     { hobby: 'MUSIC', id: Math.random() },
     { hobby: 'READ', id: Math.random() },
     { hobby: 'SPORTS', id: Math.random() },
-    { hobby: 'MAC OS', id: Math.random() },
+    { hobby: 'APPLE', id: Math.random() },
     { hobby: 'TRAVEL', id: Math.random() },
   ],
+  cv: { href: 'https://drive.google.com/file/d/14i8A6iS_pYSvMd-8JFsyz5judEeWyBss/view?usp=sharing' },
   webparts: [
     {
       icon: 'design',
@@ -42,7 +43,7 @@ const db = {
     {
       icon: 'seo',
       title: 'Seo',
-      phrase: 'Improve the positioning of a website',
+      phrase: 'Improve the positioning of a website.',
       projects: 3,
       id: Math.random(),
     },

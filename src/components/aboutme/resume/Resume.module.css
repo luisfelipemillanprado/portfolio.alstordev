@@ -1,4 +1,10 @@
 /*                              ----------------------                                   */
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 .vertical {
     display: flex;
     flex-flow: column nowrap;
@@ -7,18 +13,32 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
-.web_parts_container {
+.resume {
     width: 100%;
-    margin-bottom: 2.7rem;
-    /*background-color: aquamarine;*/
+    margin-bottom: 2rem;
 }
 
-.web_parts_technology_container {
+.resume_container_title {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    justify-content: center;
+}
+
+.resume_details_title {
+    width: auto;
+}
+
+.resume_container_paragraph {
     width: 100%;
 }
 
-.web_parts_column {
-    width: 100%;
+.highlight {
+    font-weight: 550;
+    color: var(--primary-font-color);
+}
+
+.resume_details_paragraph {
+    text-align: center;
 }
 
 /*                              ------------------------------------------------                                   */
@@ -27,7 +47,7 @@
 /*                                                                                                                 */
 /*                   ------------------------Tablet------------------------                         */
 @media screen and (min-width:768px) {
-    .web_parts_container {
-        margin-bottom: 4rem;
+    .resume_details_paragraph {
+        text-align: start;
     }
 }

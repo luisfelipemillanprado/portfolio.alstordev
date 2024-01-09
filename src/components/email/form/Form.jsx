@@ -30,7 +30,6 @@ export default function Form() {
       startButtonForm.addEventListener('click', handleOpenDialog, { capture: false, once: false });
     };
     addStartButtonFormListener(startButtonForm);
-    console.log('llego aqui');
   }, []);
   // --
   useEffect(() => {
@@ -112,11 +111,11 @@ export default function Form() {
     }
   };
   return (
-    <div className={[styles.div_horizontal_positioning, styles.form_container].join(' ')}>
+    <div className={[styles.horizontal, styles.form_container].join(' ')}>
       <Dialog open={openDialog} onClose={handleCloseDialog} component={'form'}>
-        <DialogTitle className={[styles.div_horizontal_positioning, styles.form_title].join(' ')}>
+        <DialogTitle className={[styles.horizontal, styles.form_title].join(' ')}>
           GET IN TOUCH
-          <div className={[styles.div_horizontal_positioning, styles.form_title_axiliar].join(' ')}>
+          <div className={[styles.horizontal, styles.form_title_axiliar].join(' ')}>
             <span className={styles.form_title_icon_container}>
               <FiberManualRecordRoundedIcon className={styles.form_title_icon} />
             </span>
@@ -124,9 +123,9 @@ export default function Form() {
         </DialogTitle>
         <DialogContent
           sx={inputError ? { gap: 0 } : null}
-          className={[styles.div_vertical_positioning, styles.form_content].join(' ')}
+          className={[styles.vertical, styles.form_content].join(' ')}
         >
-          <div className={[styles.div_horizontal_positioning, styles.form_inputs_container].join(' ')}>
+          <div className={[styles.horizontal, styles.form_inputs_container].join(' ')}>
             <TextField
               id={'email-input-dialog'}
               label={'Email'}
@@ -138,7 +137,7 @@ export default function Form() {
               onChange={handleInputs}
             />
           </div>
-          <div className={[styles.div_horizontal_positioning, styles.form_inputs_container].join(' ')}>
+          <div className={[styles.horizontal, styles.form_inputs_container].join(' ')}>
             <TextField
               id={'message-input-dialog'}
               label={'Message'}
@@ -158,7 +157,7 @@ export default function Form() {
             onClick={handleSendButton}
           >
             SEND
-            <div className={[styles.div_horizontal_positioning, styles.action_axiliar].join(' ')}>
+            <div className={[styles.horizontal, styles.action_axiliar].join(' ')}>
               {loading ? (
                 <CircularProgress className={styles.form_action_loader} />
               ) : (

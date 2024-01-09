@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -72,8 +72,38 @@
 /*                                                   MEDIA-QUERIES...                                              */
 /*                              ------------------------------------------------                                   */
 /*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:360px) {
+    .project_card_image {
+        height: 11rem;
+    }
+}
+
 @media screen and (min-width:390px) {
+    .project_card_image {
+        height: 11.6rem;
+    }
+
     .project_card_actions {
         padding: 0.4rem 1.2rem 1rem 1.2rem !important;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .project_card_image {
+        height: 11.8rem;
+    }
+}
+
+@media screen and (min-width:540px) {
+    .project_card_image {
+        height: 10rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:600px) {
+    .project_card_image {
+        height: 12rem;
     }
 }

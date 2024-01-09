@@ -1,22 +1,21 @@
-// import { Roboto } from 'next/font/google';
 import { createTheme } from '@mui/material/styles';
-/* const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-}); */
 // --
 const theme = createTheme({
   breakpoints: {
     values: {
-      m320: 0,
+      m0: 0,
+      m320: 320,
       m360: 360,
       m375: 375,
       m390: 390,
-      m410: 410,
-      m480: 480,
+      m400: 400,
+      m540: 540,
       t600: 600,
-      t900: 900,
+      t768: 768,
+      t820: 820,
+      t834: 834,
+      t884: 884,
+      t1114: 1114,
       p1200: 1200,
       p1536: 1536,
     },
@@ -26,9 +25,13 @@ const theme = createTheme({
     h4: {
       fontSize: '1.7rem',
       color: 'var(--primary-font-color)',
+      fontWeight: 550,
       lineHeight: 1.57,
       '@media screen and (min-width:390px)': {
         fontSize: '1.72rem',
+      },
+      '@media screen and (min-width:540px)': {
+        fontSize: '1.74rem',
       },
     },
     h5: {
@@ -39,6 +42,12 @@ const theme = createTheme({
       '@media screen and (min-width:390px)': {
         fontSize: '2.1rem',
       },
+      '@media screen and (min-width:540px)': {
+        fontSize: '2.2rem',
+      },
+      '@media screen and (min-width:1114px)': {
+        fontSize: '2.3rem',
+      },
     },
     h6: {
       fontSize: '1.7rem',
@@ -46,6 +55,18 @@ const theme = createTheme({
       lineHeight: 1.57,
       '@media screen and (min-width:390px)': {
         fontSize: '1.78rem',
+      },
+      '@media screen and (min-width:400px)': {
+        fontSize: '1.8rem',
+      },
+      '@media screen and (min-width:540px)': {
+        fontSize: '1.87rem',
+      },
+      '@media screen and (min-width:768px)': {
+        fontSize: '1.85rem',
+      },
+      '@media screen and (min-width:1114px)': {
+        fontSize: '1.9rem',
       },
     },
     body1: {
@@ -56,6 +77,15 @@ const theme = createTheme({
       },
       '@media screen and (min-width:400px)': {
         fontSize: '1.58rem',
+      },
+      '@media screen and (min-width:540px)': {
+        fontSize: '1.64rem',
+      },
+      '@media screen and (min-width:600px)': {
+        fontSize: '1.65rem',
+      },
+      '@media screen and (min-width:1114px)': {
+        fontSize: '1.7rem',
       },
     },
   },
@@ -80,12 +110,12 @@ const theme = createTheme({
     MuiLinearProgress: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          borderRadius: 'var(--linear-progress-border-radius)',
+          borderRadius: 'var(--half-border-radius)',
           height: '0.6rem',
           backgroundColor: 'var(--third-card-background-color)',
           '& .MuiLinearProgress-bar': {
             backgroundColor: 'var(--second-color-icon)',
-            borderRadius: 'var(--linear-progress-border-radius)',
+            borderRadius: 'var(--half-border-radius)',
           },
         }),
       },
@@ -140,7 +170,6 @@ const theme = createTheme({
       },
     },
     MuiDialog: {
-      defaultProps: {},
       styleOverrides: {
         root: ({ ownerState }) => ({
           '& .MuiDialog-paper': {
@@ -153,12 +182,9 @@ const theme = createTheme({
       },
     },
     MuiIconButton: {
-      defaultProps: {},
       styleOverrides: {
         root: ({ ownerState }) => ({
           padding: '0rem 0rem 0rem 1.5rem',
-          borderRadius: 'var(--linear-progress-border-radius)',
-          fontSize: '1.4rem',
           color: 'var(--second-font-color)',
         }),
       },
@@ -193,7 +219,6 @@ const theme = createTheme({
       },
     },
     MuiFormHelperText: {
-      defaultProps: {},
       styleOverrides: { root: ({ ownerState }) => ({ marginLeft: '0.1rem' }) },
     },
   },

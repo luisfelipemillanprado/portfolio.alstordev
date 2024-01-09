@@ -16,13 +16,30 @@ export default function Skills(props) {
     }
   };
   return (
-    <div className={[styles.div_vertical_positioning, styles.skills_container].join(' ')}>
-      <div className={[styles.div_horizontal_positioning, styles.skills_container_title].join(' ')}>
+    <div className={[styles.vertical, styles.skills_container].join(' ')}>
+      <div className={[styles.horizontal, styles.skills_container_title].join(' ')}>
         <Typography variant={'h6'} className={styles.skills_tilte}>
           {title}
         </Typography>
       </div>
-      <Grid sx={{ justifyContent: 'space-between' }} columnGap={2} rowGap={2} container>
+      <Grid
+        sx={{ justifyContent: 'space-between' }}
+        columnGap={{
+          m320: 2,
+          m360: 2,
+          m375: 2,
+          m390: 2,
+          m400: 2,
+          m540: 4.5,
+          t600: 3.4,
+          t768: 1.8,
+          t884: 2.2,
+          t1114: 3.8,
+          p1200: 5.4,
+        }}
+        rowGap={2}
+        container
+      >
         {arraySwitch(skills).map((skill) => {
           return (
             <Grid item key={skill.id}>

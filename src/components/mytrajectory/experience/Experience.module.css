@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -54,10 +54,20 @@
     padding: 0.3rem;
 }
 
-/*-----------------------------------*/
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
 @media screen and (min-width:393px) {
     .experience_title {
         font-size: 1.46rem !important;
         padding-top: 0.2rem;
+    }
+}
+
+@media screen and (min-width:540px) {
+    .experience_title {
+        font-size: 1.52rem !important;
+        padding-top: 0.3rem;
     }
 }

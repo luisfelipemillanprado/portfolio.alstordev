@@ -1,16 +1,4 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.div_vertical_positioning {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
 /*                               --------------------                                   */
 /*-----------------------------------*/
 .floating_container {

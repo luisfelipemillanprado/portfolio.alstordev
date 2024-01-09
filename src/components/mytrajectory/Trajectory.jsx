@@ -5,9 +5,9 @@ import styles from '@/components/mytrajectory/Trajectory.module.css';
 export default function Trajectory(props) {
   return (
     <section className={styles.trajectory}>
-      <div className={[styles.div_vertical_positioning, styles.trajectory_container_all].join(' ')}>
+      <div className={[styles.vertical, styles.trajectory_container_all].join(' ')}>
         <Badges {...{ icon: 'trajectory' }} />
-        <div className={[styles.div_horizontal_positioning, styles.trajectory_experience].join(' ')}>
+        <div className={[styles.horizontal, styles.trajectory_experience].join(' ')}>
           <Experience />
         </div>
       </div>

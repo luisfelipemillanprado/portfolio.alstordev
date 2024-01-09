@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SocialNetwork from '@/components/link/socialnetwork/SocialNetwork';
+import SocialNetwork from '@/components/cards/profile/socialnetwork/SocialNetwork';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Grid } from '@mui/material';
@@ -19,8 +19,8 @@ export default function Profile(props) {
   ];
   return (
     <Card className={styles.profile_card} sx={baseCard}>
-      <div className={[styles.div_horizontal_positioning, styles.profile_avatar_container].join(' ')}>
-        <div className={[styles.div_horizontal_positioning, styles.profile_avatar].join(' ')}>
+      <div className={[styles.horizontal, styles.profile_avatar_container].join(' ')}>
+        <div className={[styles.horizontal, styles.profile_avatar].join(' ')}>
           <Image
             width={110}
             height={110}
@@ -34,12 +34,12 @@ export default function Profile(props) {
         </div>
       </div>
       <CardContent sx={{ padding: '2.4rem' }}>
-        <div className={[styles.div_horizontal_positioning, styles.profile_card_text_container].join(' ')}>
+        <div className={[styles.horizontal, styles.profile_card_text_container].join(' ')}>
           <Typography variant={'h4'} className={styles.profile_card_title}>
             {name}
           </Typography>
         </div>
-        <div className={[styles.div_horizontal_positioning, styles.profile_card_text_container].join(' ')}>
+        <div className={[styles.horizontal, styles.profile_card_text_container].join(' ')}>
           <Typography variant={'body1'} gutterBottom className={styles.profile_card_paragraph}>
             {text}
           </Typography>

@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -13,28 +13,106 @@
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
-.about_me {
+.aboutme {
     width: 100%;
     background-color: var(--second-section-background-color);
-    padding: 0rem 2.4rem 4rem;
+    padding: 0rem 2.4rem 5rem;
 }
 
-.about_me_container_all {
+.aboutme_container_all {
     width: 100%;
-    /*background-color: aqua;*/
 }
 
 .wrapper {
     width: 100%;
-    /*background-color: antiquewhite;*/
 }
 
-.about_me_personal_details {
+.wrapper_position {
     width: 100%;
-    /*background-color: blueviolet;*/
 }
 
-.about_me_hobbies {
+.aboutme_personal_details {
     width: 100%;
-    /* background-color: burlywood;*/
+}
+
+.aboutme_hobbies {
+    width: 100%;
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .aboutme {
+        padding: 0rem 3.2rem 5rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .aboutme {
+        padding: 0rem 3.6rem 5rem;
+    }
+
+    .wrapper_position {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .aboutme_personal_details {
+        width: 48%;
+        padding-right: 3.4rem;
+    }
+
+    .aboutme_hobbies {
+        width: 52%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .aboutme {
+        padding: 0rem 4rem 5rem;
+    }
+}
+
+@media screen and (min-width:884px) {
+    .aboutme_personal_details {
+        width: 49%;
+    }
+
+    .aboutme_hobbies {
+        width: 51%;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .aboutme {
+        padding: 0rem 5.4rem 5rem;
+    }
+
+    .aboutme_personal_details {
+        width: 50%;
+        padding-right: 8rem;
+    }
+
+    .aboutme_hobbies {
+        padding-left: 6rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1280px) {
+    .aboutme {
+        padding: 0rem 7rem 5rem;
+    }
+
+    .aboutme_personal_details {
+        padding-right: 8.4rem;
+    }
+
+    .aboutme_hobbies {
+        padding-left: 3.6rem;
+    }
 }

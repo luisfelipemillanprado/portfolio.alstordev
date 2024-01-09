@@ -60,7 +60,7 @@ export default function Advance(props) {
     }
   };
   return (
-    <div className={[styles.div_vertical_positioning, styles.advance_container].join(' ')}>
+    <div className={[styles.vertical, styles.advance_container].join(' ')}>
       <div className={styles.advance_wrapper_image_progress}>
         <div className={styles.advance_wrapper_progress}>
           <CircularProgress
@@ -79,7 +79,7 @@ export default function Advance(props) {
             value={percent}
           />
         </div>
-        <div className={[styles.div_horizontal_positioning, styles.advance_image_container].join(' ')}>
+        <div className={[styles.horizontal, styles.advance_image_container].join(' ')}>
           <Image
             width={32}
             height={32}
@@ -89,7 +89,7 @@ export default function Advance(props) {
           />
         </div>
       </div>
-      <div className={[styles.div_horizontal_positioning, styles.advance_text_container].join(' ')}>
+      <div className={[styles.horizontal, styles.advance_text_container].join(' ')}>
         <Typography variant={'body1'} className={styles.advance_text}>
           {text}
         </Typography>

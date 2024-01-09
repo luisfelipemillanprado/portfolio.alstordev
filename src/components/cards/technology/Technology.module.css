@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .technology_title {
-    padding: 1.6rem 2rem 1.4rem !important;
+    padding: 1rem 2rem 1rem !important;
 }
 
 .technology_icon {
@@ -32,16 +32,5 @@
 }
 
 .technology_content {
-    padding: 0rem 2rem 1.6rem !important;
-}
-
-/*-----------------------------------*/
-@media screen and (min-width:390px) {
-    .technology_projects {
-        font-size: 1.76rem;
-    }
-
-    .technology_title {
-        padding: 1.6rem 2rem 1rem !important;
-    }
+    padding: 0rem 2rem 1.8rem !important;
 }

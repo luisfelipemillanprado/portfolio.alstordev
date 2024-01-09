@@ -2,7 +2,7 @@ import Link from 'next/link';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
-import styles from '@/components/link/navlink/NavLink.module.css';
+import styles from '@/components/header/navigation/navlink/NavLink.module.css';
 // --
 export default function NavLink(props) {
   const { href, icon, ariaLabel } = props;
@@ -25,11 +25,7 @@ export default function NavLink(props) {
     }
   };
   return (
-    <Link
-      aria-label={ariaLabel}
-      className={[styles.div_horizontal_positioning, styles.navlink].join(' ')}
-      href={href}
-    >
+    <Link aria-label={ariaLabel} className={[styles.horizontal, styles.navlink].join(' ')} href={href}>
       {iconSwitch(icon).icon}
     </Link>
   );

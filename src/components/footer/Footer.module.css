@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -31,6 +31,43 @@
 
 .footer_rights {
     width: 100%;
-    border-radius: 0.3rem;
+    border-radius: var(--small-border-radius);
     background-color: var(--second-section-background-color);
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .footer {
+        padding: 0rem 3.2rem 1rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .footer {
+        padding: 0rem 3.6rem 1rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .footer {
+        padding: 0rem 4rem 1rem;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .footer {
+        padding: 0rem 5.4rem 1rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1280px) {
+    .footer {
+        padding: 0rem 7rem 1rem;
+    }
 }

@@ -1,24 +1,16 @@
 /*                              ----------------------                                   */
-.vertical {
+.horizontal {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: center;
 }
 
 /*                               --------------------                                   */
 /*-----------------------------------*/
-.web_parts_container {
+.container_title {
     width: 100%;
-    margin-bottom: 2.7rem;
-    /*background-color: aquamarine;*/
-}
-
-.web_parts_technology_container {
-    width: 100%;
-}
-
-.web_parts_column {
-    width: 100%;
+    margin-bottom: 1.1rem;
+    justify-content: center;
 }
 
 /*                              ------------------------------------------------                                   */
@@ -27,7 +19,7 @@
 /*                                                                                                                 */
 /*                   ------------------------Tablet------------------------                         */
 @media screen and (min-width:768px) {
-    .web_parts_container {
-        margin-bottom: 4rem;
+    .container_title {
+        margin-bottom: 1.4rem;
     }
 }

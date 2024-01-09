@@ -1,11 +1,11 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-.div_vertical_positioning {
+.vertical {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -26,4 +26,41 @@
 
 .trajectory_experience {
     width: 100%;
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .trajectory {
+        padding: 0rem 3.2rem 1.6rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .trajectory {
+        padding: 0rem 3.6rem 1.6rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .trajectory {
+        padding: 0rem 4rem 1.6rem;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .trajectory {
+        padding: 0rem 5.4rem 1.6rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1114px) {
+    .trajectory {
+        padding: 0rem 7rem 1.6rem;
+    }
 }

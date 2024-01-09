@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -30,9 +30,31 @@
     line-height: normal !important;
 }
 
-/*-----------------------------------*/
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
 @media screen and (min-width:390px) {
     .item_icon {
         font-size: 1.6rem !important;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .item_icon {
+        font-size: 1.7rem !important;
+    }
+
+    .item_text {
+        font-size: 1.64rem !important;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1280px) {
+    .item_text {
+        font-size: 1.67rem !important;
     }
 }

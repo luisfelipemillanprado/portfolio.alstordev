@@ -1,5 +1,5 @@
 /*                              ----------------------                                   */
-.div_horizontal_positioning {
+.horizontal {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -14,10 +14,23 @@
 }
 
 .rights_title {
+    display: none;
     font-weight: 550 !important;
     color: var(--primary-font-color) !important;
 }
 
-/* .rights_text {
-    font-family: var(--font-family-1);
-} */
+.rights_icon {
+    font-size: 1.6rem !important;
+    margin-right: 0.5rem;
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:360px) {
+    .rights_title {
+        display: flex;
+    }
+}

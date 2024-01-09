@@ -1,0 +1,92 @@
+/*                              ----------------------                                   */
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.basic_container {
+    width: 100%;
+    justify-content: center;
+    /*background-color: aquamarine;*/
+}
+
+.basic_wrapper {
+    position: relative;
+    justify-content: center;
+    padding: 0.1rem;
+    border-radius: var(--half-border-radius);
+    overflow: hidden;
+}
+
+.basic_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    width: 24rem;
+    height: 2.4rem;
+    transform-origin: center;
+    background-image: linear-gradient(0deg, #1bb699, #1bb699, #1bb699, #1bb699, #1bb699, #12b997);
+    animation: rotate 4s linear infinite;
+}
+
+.basic_link {
+    background-color: var(--second-section-background-color);
+    z-index: 3;
+    border-radius: var(--half-border-radius);
+    border: 0.1rem solid var(--secondary-background-border);
+    justify-content: center;
+}
+
+.basic_button {
+    font-size: 1.54rem !important;
+}
+
+.basic_icon_container {
+    background-color: var(--second-color-icon);
+    border-radius: var(--half-border-radius);
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: -0.1rem;
+    justify-content: center;
+}
+
+.basic_icon {
+    font-size: 2rem !important;
+    color: var(--second-font-color);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:540px) {
+    .basic_button {
+        font-size: 1.58rem !important;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .basic_button {
+        font-size: 1.62rem !important;
+    }
+}

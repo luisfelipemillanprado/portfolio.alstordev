@@ -44,7 +44,7 @@ export default function Project(props) {
             <Image
               className={styles.project_card_image}
               width={145}
-              height={110}
+              height={80}
               src={coverSwitch(cover).icon}
               blurDataURL={coverSwitch(cover).blur}
               alt={`Project's image`}
@@ -52,7 +52,7 @@ export default function Project(props) {
           </Link>
         </div>
         <CardContent className={styles.project_card_content}>
-          <div className={[styles.div_horizontal_positioning, styles.project_card_name_container].join(' ')}>
+          <div className={[styles.horizontal, styles.project_card_name_container].join(' ')}>
             <Typography variant={'body1'} className={styles.project_card_name}>
               {title}
             </Typography>
@@ -60,8 +60,8 @@ export default function Project(props) {
         </CardContent>
       </CardActionArea>
       <CardActions className={styles.project_card_actions}>
-        <div className={[styles.div_horizontal_positioning, styles.project_progress_container].join(' ')}>
-          <div className={[styles.div_horizontal_positioning, styles.project_progress_icon].join(' ')}>
+        <div className={[styles.horizontal, styles.project_progress_container].join(' ')}>
+          <div className={[styles.horizontal, styles.project_progress_icon].join(' ')}>
             <CircularProgress
               thickness={8}
               className={styles.project_base_progress}
@@ -75,9 +75,7 @@ export default function Project(props) {
               value={percent}
             />
           </div>
-          <div
-            className={[styles.div_horizontal_positioning, styles.project_progress_text_container].join(' ')}
-          >
+          <div className={[styles.horizontal, styles.project_progress_text_container].join(' ')}>
             <Typography
               variant={'body1'}
               className={styles.project_progress_text}

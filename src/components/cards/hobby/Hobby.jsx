@@ -36,7 +36,7 @@ export default function Hobby(props) {
         return {
           icon: <SportsBasketballIcon className={styles.hobby_icon} />,
         };
-      case 'MAC OS':
+      case 'APPLE':
         return {
           icon: <AppleIcon className={styles.hobby_icon} />,
         };
@@ -53,11 +53,11 @@ export default function Hobby(props) {
   // --
   return (
     <Card className={styles.hobby_card} sx={baseCard}>
-      <div className={[styles.div_horizontal_positioning, styles.hobby_icon_container].join(' ')}>
+      <div className={[styles.horizontal, styles.hobby_icon_container].join(' ')}>
         {iconSwitch(hobby).icon}
       </div>
-      <CardContent sx={{ padding: '0rem 2rem 1.6rem 2rem !important' }}>
-        <div className={[styles.div_horizontal_positioning, styles.hobby_title_container].join(' ')}>
+      <CardContent className={styles.hobby_card_content}>
+        <div className={[styles.horizontal, styles.hobby_title_container].join(' ')}>
           <Typography variant={'body1'} className={styles.hobby_card_title}>
             {hobby}
           </Typography>

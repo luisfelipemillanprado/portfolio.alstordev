@@ -3,7 +3,7 @@ import styles from '@/components/logo/Logo.module.css';
 // --
 export default function Logo(props) {
   return (
-    <div className={[styles.div_horizontal_positioning, styles.logo_container].join(' ')}>
+    <div className={[styles.horizontal, styles.logo_container].join(' ')}>
       <Image
         width={22}
         height={22}

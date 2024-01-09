@@ -1,5 +1,5 @@
 import Logo from '@/components/logo/Logo';
-import NavLink from '@/components/link/navlink/NavLink';
+import NavLink from '@/components/header/navigation/navlink/NavLink';
 import Form from '@/components/email/form/Form';
 import IconButton from '@mui/material/IconButton';
 import { Grid } from '@mui/material';
@@ -8,16 +8,12 @@ import styles from '@/components/header/navigation/Navigation.module.css';
 // --
 export default function Navigation(props) {
   return (
-    <div className={[styles.div_horizontal_positioning, styles.navigation_container].join(' ')}>
-      <div className={styles.div_horizontal_positioning}>
+    <div className={[styles.horizontal, styles.navigation_container].join(' ')}>
+      <div className={styles.horizontal}>
         <Logo />
       </div>
-      <div className={styles.div_horizontal_positioning}>
-        <Grid
-          className={[styles.div_horizontal_positioning, styles.navigation_row_links].join(' ')}
-          container
-          minHeight={22}
-        >
+      <div className={styles.horizontal}>
+        <Grid className={[styles.horizontal, styles.navigation_row_links].join(' ')} container minHeight={22}>
           <Grid item>
             <NavLink {...{ href: '/', icon: 'home', ariaLabel: 'Go to homepage' }} />
           </Grid>

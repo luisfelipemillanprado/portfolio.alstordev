@@ -45,3 +45,34 @@
         padding: 1rem 3.1rem;
     }
 }
+
+@media screen and (min-width:800px) {
+    .navigation_container {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .navigation_container {
+        padding: 1rem 4.6rem;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .navigation_container {
+        padding: 1rem 5.4rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1200px) {
+    .navigation_container {
+        padding: 1rem 7rem;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .navigation_container {
+        padding: 1rem 9rem;
+    }
+}

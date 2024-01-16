@@ -19,12 +19,13 @@
 }
 
 .experience_title {
-    font-size: 1.4rem !important;
-    line-height: normal !important;
+    font-size: 1.4rem;
+    line-height: normal;
     padding: 0.2rem 1rem;
     border-radius: 2rem;
     border: 0.1rem solid var(--third-background-border);
     background-color: var(--third-card-background-color);
+    color: var(--primary-font-color);
 }
 
 .sub_title_margin_container {
@@ -58,16 +59,38 @@
 /*                                                   MEDIA-QUERIES...                                              */
 /*                              ------------------------------------------------                                   */
 /*                                                                                                                 */
-@media screen and (min-width:393px) {
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:390px) {
     .experience_title {
-        font-size: 1.46rem !important;
+        font-size: 1.46rem;
         padding-top: 0.2rem;
     }
 }
 
-@media screen and (min-width:540px) {
+@media screen and (min-width:500px) {
     .experience_title {
-        font-size: 1.52rem !important;
+        font-size: 1.52rem;
         padding-top: 0.3rem;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .experience_title {
+        font-size: 1.54rem;
+        padding-top: 0.4rem;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:1114px) {
+    .experience_title {
+        font-size: 1.55rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1360px) {
+    .experience_title {
+        font-size: 1.56rem;
     }
 }

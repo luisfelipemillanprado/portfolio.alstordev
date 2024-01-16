@@ -53,7 +53,7 @@
 }
 
 /*                   ------------------------Desktop------------------------                         */
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1200px) {
     .item_text {
         font-size: 1.67rem !important;
     }

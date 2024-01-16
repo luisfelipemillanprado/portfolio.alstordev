@@ -21,7 +21,9 @@ export default function AboutMe(props) {
               <Hobbies />
             </div>
           </div>
-          <Basic {...{ text: 'See curriculum', href: db.cv.href, change: false }} />
+          <div className={[styles.horizontal, styles.aboutme_button_wrapper].join(' ')}>
+            <Basic {...{ text: 'See curriculum', href: db.cv.href, change: false, margin: true }} />
+          </div>
         </div>
       </div>
     </section>

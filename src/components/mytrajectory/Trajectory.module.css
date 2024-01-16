@@ -33,7 +33,7 @@
 /*                              ------------------------------------------------                                   */
 /*                                                                                                                 */
 /*                   ------------------------Mobile------------------------                         */
-@media screen and (min-width:540px) {
+@media screen and (min-width:500px) {
     .trajectory {
         padding: 0rem 3.2rem 1.6rem;
     }
@@ -52,6 +52,12 @@
     }
 }
 
+@media screen and (min-width:1000px) {
+    .trajectory {
+        padding: 0rem 4.6rem 1.6rem;
+    }
+}
+
 @media screen and (min-width:1114px) {
     .trajectory {
         padding: 0rem 5.4rem 1.6rem;
@@ -59,8 +65,14 @@
 }
 
 /*                   ------------------------Desktop------------------------                         */
-@media screen and (min-width:1114px) {
+@media screen and (min-width:1200px) {
     .trajectory {
         padding: 0rem 7rem 1.6rem;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .trajectory {
+        padding: 0rem 9rem 1.6rem;
     }
 }

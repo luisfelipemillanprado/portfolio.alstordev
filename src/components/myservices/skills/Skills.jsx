@@ -26,15 +26,11 @@ export default function Skills(props) {
         sx={{ justifyContent: 'space-between' }}
         columnGap={{
           m320: 2,
-          m360: 2,
-          m375: 2,
-          m390: 2,
-          m400: 2,
-          m540: 4.5,
+          m500: 4.5,
           t600: 3.4,
           t768: 1.8,
-          t884: 2.2,
-          t1114: 3.8,
+          t884: 2.6,
+          t1000: 5,
           p1200: 5.4,
         }}
         rowGap={2}

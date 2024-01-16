@@ -43,9 +43,7 @@ export default function Technology(props) {
         <Typography variant={'body1'} className={styles.technology_phrase}>
           {phrase}
         </Typography>
-        <Typography variant={'body1'} className={styles.technology_projects}>
-          {projects} projects
-        </Typography>
+        <span className={styles.technology_projects}>{projects} projects</span>
       </CardContent>
     </Card>
   );

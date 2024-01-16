@@ -9,15 +9,15 @@ const theme = createTheme({
       m375: 375,
       m390: 390,
       m400: 400,
-      m540: 540,
+      m500: 500,
       t600: 600,
       t768: 768,
       t820: 820,
-      t834: 834,
       t884: 884,
+      t1000: 1000,
       t1114: 1114,
       p1200: 1200,
-      p1536: 1536,
+      p1360: 1360,
     },
   },
   typography: {
@@ -30,7 +30,7 @@ const theme = createTheme({
       '@media screen and (min-width:390px)': {
         fontSize: '1.72rem',
       },
-      '@media screen and (min-width:540px)': {
+      '@media screen and (min-width:500px)': {
         fontSize: '1.74rem',
       },
     },
@@ -42,7 +42,7 @@ const theme = createTheme({
       '@media screen and (min-width:390px)': {
         fontSize: '2.1rem',
       },
-      '@media screen and (min-width:540px)': {
+      '@media screen and (min-width:500px)': {
         fontSize: '2.2rem',
       },
       '@media screen and (min-width:1114px)': {
@@ -59,7 +59,7 @@ const theme = createTheme({
       '@media screen and (min-width:400px)': {
         fontSize: '1.8rem',
       },
-      '@media screen and (min-width:540px)': {
+      '@media screen and (min-width:500px)': {
         fontSize: '1.87rem',
       },
       '@media screen and (min-width:768px)': {
@@ -78,7 +78,7 @@ const theme = createTheme({
       '@media screen and (min-width:400px)': {
         fontSize: '1.58rem',
       },
-      '@media screen and (min-width:540px)': {
+      '@media screen and (min-width:500px)': {
         fontSize: '1.64rem',
       },
       '@media screen and (min-width:600px)': {
@@ -184,7 +184,7 @@ const theme = createTheme({
     MuiIconButton: {
       styleOverrides: {
         root: ({ ownerState }) => ({
-          padding: '0rem 0rem 0rem 1.5rem',
+          padding: '0.1rem 0rem 0.1rem 1.5rem',
           color: 'var(--second-font-color)',
         }),
       },

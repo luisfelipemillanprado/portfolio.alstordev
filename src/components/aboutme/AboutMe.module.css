@@ -39,12 +39,16 @@
     width: 100%;
 }
 
+.aboutme_button_wrapper {
+    width: 100%;
+}
+
 /*                              ------------------------------------------------                                   */
 /*                                                   MEDIA-QUERIES...                                              */
 /*                              ------------------------------------------------                                   */
 /*                                                                                                                 */
 /*                   ------------------------Mobile------------------------                         */
-@media screen and (min-width:540px) {
+@media screen and (min-width:500px) {
     .aboutme {
         padding: 0rem 3.2rem 5rem;
     }
@@ -87,13 +91,27 @@
     }
 }
 
+@media screen and (min-width:1000px) {
+    .aboutme {
+        padding: 0rem 4.6rem 5rem;
+    }
+
+    .aboutme_personal_details {
+        width: 50%;
+    }
+
+    .aboutme_hobbies {
+        width: 50%;
+        padding-left: 4rem;
+    }
+}
+
 @media screen and (min-width:1114px) {
     .aboutme {
         padding: 0rem 5.4rem 5rem;
     }
 
     .aboutme_personal_details {
-        width: 50%;
         padding-right: 8rem;
     }
 
@@ -103,16 +121,35 @@
 }
 
 /*                   ------------------------Desktop------------------------                         */
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1200px) {
     .aboutme {
         padding: 0rem 7rem 5rem;
     }
 
     .aboutme_personal_details {
-        padding-right: 8.4rem;
+        padding-right: 8.8rem;
     }
 
     .aboutme_hobbies {
-        padding-left: 3.6rem;
+        padding-left: 3.5rem;
+    }
+
+    .aboutme_button_wrapper {
+        width: auto;
+        margin-right: 32rem;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .aboutme {
+        padding: 0rem 9rem 5rem;
+    }
+
+    .aboutme_personal_details {
+        padding-right: 10.5rem;
+    }
+
+    .aboutme_hobbies {
+        padding-left: 6.5rem;
     }
 }

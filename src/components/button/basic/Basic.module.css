@@ -19,6 +19,14 @@
     /*background-color: aquamarine;*/
 }
 
+.first_margin {
+    margin-top: 2rem;
+}
+
+.second_margin {
+    margin-top: 0.7rem;
+}
+
 .basic_wrapper {
     position: relative;
     justify-content: center;
@@ -48,6 +56,7 @@
 
 .basic_button {
     font-size: 1.54rem !important;
+    padding: 0rem 0rem 0rem 1.5rem;
 }
 
 .basic_icon_container {
@@ -79,14 +88,36 @@
 /*                              ------------------------------------------------                                   */
 /*                                                                                                                 */
 /*                   ------------------------Mobile------------------------                         */
-@media screen and (min-width:540px) {
+@media screen and (min-width:500px) {
     .basic_button {
-        font-size: 1.58rem !important;
+        font-size: 1.62rem !important;
     }
 }
 
 @media screen and (min-width:600px) {
     .basic_button {
-        font-size: 1.62rem !important;
+        font-size: 1.64rem !important;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:1114px) {
+    .second_margin {
+        margin-top: 1.8rem;
+    }
+
+    .basic_button {
+        font-size: 1.66rem !important;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1200px) {
+    .basic_button {
+        font-size: 1.69rem !important;
+    }
+
+    .basic_icon {
+        font-size: 2.2rem !important;
     }
 }

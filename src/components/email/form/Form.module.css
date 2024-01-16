@@ -44,12 +44,6 @@
     color: var(--second-color-icon);
 }
 
-.form_icon_container {
-    margin-left: 0.6rem;
-    margin-right: 0.2rem;
-    color: var(--second-color-icon);
-}
-
 .form_content {
     gap: 1.6rem;
     padding-bottom: 1.6rem !important;
@@ -91,6 +85,7 @@
 .form_action_send_button {
     border: 0.1rem solid var(--second-color-icon) !important;
     border-radius: var(--half-border-radius) !important;
+    font-size: 1.4rem !important;
 }
 
 .action_axiliar {

@@ -81,33 +81,29 @@
     }
 
     .hobby_icon {
-        font-size: 2.4rem !important;
+        font-size: 2.5rem !important;
     }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 500px) {
     .hobby_card {
-        width: 10.8rem;
+        width: 10.7rem;
     }
 
     .hobby_card_title {
         font-size: 1.47rem !important;
-    }
-
-    .hobby_icon {
-        font-size: 2.5rem !important;
     }
 }
 
 /*                   ------------------------Tablet------------------------                         */
 @media screen and (min-width: 600px) {
     .hobby_card {
-        width: 10.9rem;
+        width: 9.7rem;
         height: 9rem;
     }
 
     .hobby_card_title {
-        font-size: 1.5rem !important;
+        font-size: 1.53rem !important;
     }
 
     .hobby_icon {
@@ -124,6 +120,10 @@
     .hobby_icon_container {
         padding-top: 1.1rem;
         padding-bottom: 1.3rem;
+    }
+
+    .hobby_card_title {
+        font-size: 1.5rem !important;
     }
 
     .hobby_icon {
@@ -156,6 +156,12 @@
     }
 }
 
+@media screen and (min-width: 1000px) {
+    .hobby_card {
+        width: 9.4rem;
+    }
+}
+
 @media screen and (min-width: 1114px) {
     .hobby_card {
         width: 9.7rem;
@@ -176,7 +182,7 @@
 }
 
 /*                   ------------------------Desktop------------------------                         */
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
     .hobby_card {
         width: 9.5rem;
     }

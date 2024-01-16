@@ -19,9 +19,14 @@ export default function Services(props) {
             <div className={[styles.vertical, styles.services_skills].join(' ')}>
               <Skills {...{ skills: 'technical', title: 'Technical Skills.' }} />
               <Skills {...{ skills: 'soft', title: 'Soft Skills.' }} />
+              <div className={[styles.horizontal, styles.services_show].join(' ')}>
+                <Basic {...{ text: ' See projects', href: '/worksection', change: true, margin: false }} />
+              </div>
             </div>
           </div>
-          <Basic {...{ text: ' See projects', href: '/worksection', change: true }} />
+          <div className={[styles.horizontal, styles.services_hide].join(' ')}>
+            <Basic {...{ text: ' See projects', href: '/worksection', change: true, margin: false }} />
+          </div>
         </div>
       </div>
     </section>

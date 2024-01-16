@@ -1,0 +1,33 @@
+/*                              ----------------------                                   */
+.horizontal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*                               --------------------                                   */
+/*-----------------------------------*/
+.final_point_container {
+    margin-left: 0.1rem;
+    background-color: aqua;
+    position: relative;
+}
+
+.final_point_wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: -0.8rem;
+    left: 0rem;
+}
+
+.final_point_icon {
+    font-size: 0.7rem !important;
+    color: var(--second-color-icon);
+}

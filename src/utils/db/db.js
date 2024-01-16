@@ -52,7 +52,7 @@ const db = {
     technicalSkills: [
       { icon: 'html', text: 'HTML', percent: 75, ariaLabel: 'HTML skill', id: Math.random() },
       { icon: 'css', text: 'CSS', percent: 75, ariaLabel: 'CSS skill', id: Math.random() },
-      { icon: 'animation', text: 'Anim...', percent: 75, ariaLabel: 'Animation skill', id: Math.random() },
+      { icon: 'animation', text: 'Anima...', percent: 75, ariaLabel: 'Animation skill', id: Math.random() },
       { icon: 'javascript', text: 'JS', percent: 75, ariaLabel: 'JavaScript skill', id: Math.random() },
       { icon: 'figma', text: 'Figma', percent: 75, ariaLabel: 'Figma skill', id: Math.random() },
       { icon: 'react', text: 'React', percent: 75, ariaLabel: 'React skill', id: Math.random() },

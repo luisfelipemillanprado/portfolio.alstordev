@@ -19,9 +19,7 @@ export default function Experience(props) {
             styles.title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} className={[styles.horizontal, styles.experience_title].join(' ')}>
-            2022 - PRESENT
-          </Typography>
+          <span className={[styles.horizontal, styles.experience_title].join(' ')}>2022 - PRESENT</span>
         </div>
       ),
       subTitle: (
@@ -61,9 +59,7 @@ export default function Experience(props) {
             styles.title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} className={[styles.horizontal, styles.experience_title].join(' ')}>
-            2022
-          </Typography>
+          <span className={[styles.horizontal, styles.experience_title].join(' ')}>2022</span>
         </div>
       ),
       subTitle: (
@@ -103,9 +99,7 @@ export default function Experience(props) {
             styles.title_margin_container,
           ].join(' ')}
         >
-          <Typography variant={'body1'} className={[styles.horizontal, styles.experience_title].join(' ')}>
-            2022
-          </Typography>
+          <span className={[styles.horizontal, styles.experience_title].join(' ')}>2022</span>
         </div>
       ),
       subTitle: (
@@ -139,9 +133,7 @@ export default function Experience(props) {
       id: Math.random(),
       title: (
         <div className={[styles.horizontal, styles.experience_text_container].join(' ')}>
-          <Typography variant={'body1'} className={[styles.horizontal, styles.experience_title].join(' ')}>
-            ...
-          </Typography>
+          <span className={[styles.horizontal, styles.experience_title].join(' ')}>...</span>
         </div>
       ),
     },

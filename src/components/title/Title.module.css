@@ -5,20 +5,13 @@
     align-items: center;
 }
 
-.vertical {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
 /*                               --------------------                                   */
 /*-----------------------------------*/
-.project_list_container {
+.container_title {
     width: 100%;
-    /*background-color: aquamarine;*/
+    justify-content: center;
 }
 
-.project_list_container_title {
-    width: 100%;
-    margin-bottom: 1.1rem;
+.title {
+    width: auto;
 }

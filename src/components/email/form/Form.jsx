@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
+import FinalPoint from '@/components/decoration/FinalPoint';
 import Alert from '@/components/email/alert/Alert';
 import formValidation from '@/utils/validation/form/Form';
 import IconButton from '@mui/material/IconButton';
@@ -10,7 +11,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import TextField from '@mui/material/TextField';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import FiberManualRecordRoundedIcon from '@mui/icons-material/FiberManualRecordRounded';
 import db from '@/utils/db/db';
 import styles from '@/components/email/form/Form.module.css';
 // --
@@ -115,11 +115,7 @@ export default function Form() {
       <Dialog open={openDialog} onClose={handleCloseDialog} component={'form'}>
         <DialogTitle className={[styles.horizontal, styles.form_title].join(' ')}>
           GET IN TOUCH
-          <div className={[styles.horizontal, styles.form_title_axiliar].join(' ')}>
-            <span className={styles.form_title_icon_container}>
-              <FiberManualRecordRoundedIcon className={styles.form_title_icon} />
-            </span>
-          </div>
+          <FinalPoint {...{ form: true }} />
         </DialogTitle>
         <DialogContent
           sx={inputError ? { gap: 0 } : null}

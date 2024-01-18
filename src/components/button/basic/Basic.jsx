@@ -16,7 +16,7 @@ export default function Basic(props) {
         <Link
           className={[styles.horizontal, styles.basic_link].join(' ')}
           href={href}
-          target={change ? '_self' : '_blank'}
+          target={change ? '_self' : '_parent'}
           rel={'noopener noreferrer'}
         >
           <div className={[styles.horizontal, styles.basic_button].join(' ')}>

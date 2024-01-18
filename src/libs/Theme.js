@@ -87,6 +87,9 @@ const theme = createTheme({
       '@media screen and (min-width:1114px)': {
         fontSize: '1.7rem',
       },
+      '@media screen and (min-width:1360px)': {
+        fontSize: '1.75rem',
+      },
     },
   },
   components: {

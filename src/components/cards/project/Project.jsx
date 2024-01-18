@@ -43,7 +43,7 @@ export default function Project(props) {
           <Link href={href} target={'_blank'} rel={'noopener noreferrer'}>
             <Image
               className={styles.project_card_image}
-              width={145}
+              width={140}
               height={80}
               src={coverSwitch(cover).icon}
               blurDataURL={coverSwitch(cover).blur}

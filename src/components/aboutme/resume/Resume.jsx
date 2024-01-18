@@ -1,4 +1,4 @@
-import FinalPoint from '@/components/decoration/FinalPoint';
+import Title from '@/components/title/Title';
 import Typography from '@mui/material/Typography';
 import MediaQuery from '@/utils/hooks/MediaQuery';
 import styles from '@/components/aboutme/resume/Resume.module.css';
@@ -7,10 +7,7 @@ export default function Resume() {
   return (
     <div className={[styles.vertical, styles.resume].join(' ')}>
       <div className={[styles.horizontal, styles.resume_container_title].join(' ')}>
-        <Typography variant={'h5'} className={styles.resume_details_title}>
-          Hello! I am Luis Felipe
-        </Typography>
-        <FinalPoint />
+        <Title {...{ text: 'Hello! I am Luis Felipe' }} />
       </div>
       <div className={[styles.horizontal, styles.resume_container_paragraph].join(' ')}>
         <Typography variant={'body1'} className={styles.resume_details_paragraph}>

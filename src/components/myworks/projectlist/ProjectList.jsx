@@ -1,27 +1,36 @@
+import Title from '@/components/title/Title';
 import Project from '@/components/cards/project/Project';
 import { Grid } from '@mui/material';
-import Typography from '@mui/material/Typography';
 import db from '@/utils/db/db';
 import styles from '@/components/myworks/projectlist/ProjectList.module.css';
 // --
 export default function ProjectList(props) {
   return (
     <div className={[styles.vertical, styles.project_list_container].join(' ')}>
-      <div className={[styles.vertical, styles.project_list_container_title].join(' ')}>
-        <Typography variant={'h5'} className={styles.project_list_title}>
-          Projects.
-        </Typography>
+      <div className={[styles.horizontal, styles.project_list_container_title].join(' ')}>
+        <Title {...{ text: 'Projects' }} />
       </div>
       <Grid
         direction={'row'}
         sx={{ justifyContent: 'space-between' }}
-        rowGap={{ m320: 1.9, m360: 2.3, m390: 2.8, m400: 2.7, m540: 2.2, t600: 2.4 }}
-        columns={{ m320: 12, m400: 12.4, m540: 13.2, t768: 13 }}
+        rowGap={{ m320: 1.6, m360: 1.8, m375: 1.9, m390: 2, m400: 2.6, m500: 2.2 }}
         container
       >
         {db.projects.map((element) => {
           return (
-            <Grid m320={5.6} m360={5.6} m400={5.8} m540={4.1} t768={3} item key={element.id}>
+            <Grid
+              m320={5.7}
+              m400={5.6}
+              m500={3.7}
+              t768={2.8}
+              t884={2.7}
+              t1000={2.5}
+              t1114={2.4}
+              p1200={2.1}
+              p1360={2}
+              item
+              key={element.id}
+            >
               <Project
                 {...{
                   cover: element.cover,

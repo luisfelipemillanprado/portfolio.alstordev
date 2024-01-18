@@ -1,14 +1,15 @@
 import FinalPoint from '@/components/decoration/FinalPoint';
 import Typography from '@mui/material/Typography';
-import styles from '@/components/myservices/title/Title.module.css';
+import styles from '@/components/title/Title.module.css';
 // --
-export default function Title() {
+export default function Title(props) {
+  const { text } = props;
   return (
     <div className={[styles.horizontal, styles.container_title].join(' ')}>
-      <Typography variant={'h5'} className={styles.title}>
-        What I can do
+      <Typography sx variant={'h5'} className={styles.title}>
+        {text}
       </Typography>
-      <FinalPoint />
+      <FinalPoint {...{ form: false }} />
     </div>
   );
 }

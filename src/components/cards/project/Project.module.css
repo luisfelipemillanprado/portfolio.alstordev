@@ -75,13 +75,13 @@
 /*                   ------------------------Mobile------------------------                         */
 @media screen and (min-width:360px) {
     .project_card_image {
-        height: 11rem;
+        height: 10rem;
     }
 }
 
 @media screen and (min-width:390px) {
     .project_card_image {
-        height: 11.6rem;
+        height: 11.4rem;
     }
 
     .project_card_actions {
@@ -91,13 +91,13 @@
 
 @media screen and (min-width:400px) {
     .project_card_image {
-        height: 11.8rem;
+        height: 11.6rem;
     }
 }
 
-@media screen and (min-width:540px) {
+@media screen and (min-width:500px) {
     .project_card_image {
-        height: 10rem;
+        height: 10.2rem;
     }
 }
 
@@ -105,5 +105,42 @@
 @media screen and (min-width:600px) {
     .project_card_image {
         height: 12rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .project_card_image {
+        height: 11.6rem;
+    }
+}
+
+@media screen and (min-width:884px) {
+    .project_card_image {
+        height: 11.6rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .project_card_image {
+        height: 12.7rem;
+    }
+}
+
+@media screen and (min-width:1114px) {
+    .project_card_image {
+        height: 13rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1200px) {
+    .project_card_image {
+        height: 12.9rem;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .project_card_image {
+        height: 13.4rem;
     }
 }

@@ -1,5 +1,5 @@
 import Badges from '@/components/badge/Badge';
-import Title from '@/components/myservices/title/Title';
+import Summary from '@/components/myservices/summary/Summary';
 import WebParts from '@/components/myservices/webparts/WebParts';
 import Skills from '@/components/myservices/skills/Skills';
 import Basic from '@/components/button/basic/Basic';
@@ -11,7 +11,7 @@ export default function Services(props) {
       <div className={[styles.vertical, styles.services_container_all].join(' ')}>
         <Badges {...{ icon: 'skills' }} />
         <div className={[styles.vertical, styles.wrapper].join(' ')}>
-          <Title />
+          <Summary />
           <div className={[styles.vertical, styles.wrapper_position].join(' ')}>
             <div className={[styles.horizontal, styles.services_webparts].join(' ')}>
               <WebParts />

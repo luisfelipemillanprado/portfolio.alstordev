@@ -27,7 +27,40 @@
     left: 0rem;
 }
 
+.final_point_form_margin {
+    top: -1.3rem;
+}
+
 .final_point_icon {
     font-size: 0.7rem !important;
     color: var(--second-color-icon);
+}
+
+.final_point_form_icon {
+    font-size: 1rem !important;
+    color: var(--second-color-icon);
+}
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Mobile------------------------                         */
+@media screen and (min-width:500px) {
+    .final_point_icon {
+        font-size: 0.8rem !important;
+    }
+}
+
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:768px) {
+    .final_point_icon {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .final_point_icon {
+        font-size: 1rem !important;
+    }
 }

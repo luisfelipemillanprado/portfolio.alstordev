@@ -24,7 +24,7 @@ export default function Profile(props) {
         className={[styles.horizontal, styles.profile_avatar_container].join(' ')}
         initial={{ opacity: 0, translateX: -80 }}
         animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.7 }}
       >
         <div className={[styles.horizontal, styles.profile_avatar].join(' ')}>
           <Image
@@ -40,21 +40,37 @@ export default function Profile(props) {
         </div>
       </MotionDiv>
       <CardContent sx={{ padding: '2.4rem' }}>
-        <div className={[styles.horizontal, styles.profile_card_text_container].join(' ')}>
+        <MotionDiv
+          className={[styles.horizontal, styles.profile_card_text_container].join(' ')}
+          initial={{ opacity: 0, translateX: 80 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+        >
           <Typography variant={'h4'} className={styles.profile_card_title}>
             {name}
           </Typography>
-        </div>
-        <div className={[styles.horizontal, styles.profile_card_text_container].join(' ')}>
+        </MotionDiv>
+        <MotionDiv
+          className={[styles.horizontal, styles.profile_card_text_container].join(' ')}
+          initial={{ opacity: 0, translateX: -80 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+        >
           <Typography variant={'body1'} gutterBottom className={styles.profile_card_paragraph}>
             {text}
           </Typography>
-        </div>
+        </MotionDiv>
         <Grid sx={{ justifyContent: 'space-between' }} container>
-          {array.map((element) => {
+          {array.map((element, index) => {
             return (
               <Grid item key={element.id}>
-                <SocialNetwork {...{ href: element.href, icon: element.icon }} />
+                <MotionDiv
+                  initial={{ opacity: 0, translateX: 80 }}
+                  animate={{ opacity: 1, translateX: 0 }}
+                  transition={{ duration: 0.7, delay: index * 0.3 }}
+                >
+                  <SocialNetwork {...{ href: element.href, icon: element.icon }} />
+                </MotionDiv>
               </Grid>
             );
           })}

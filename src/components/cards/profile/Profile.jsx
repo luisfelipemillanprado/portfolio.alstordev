@@ -24,6 +24,7 @@ export default function Profile(props) {
         className={[styles.horizontal, styles.profile_avatar_container].join(' ')}
         initial={{ opacity: 0, translateX: -80 }}
         animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 0.5 }}
       >
         <div className={[styles.horizontal, styles.profile_avatar].join(' ')}>
           <Image

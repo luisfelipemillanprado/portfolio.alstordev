@@ -6,7 +6,7 @@ export default function Title(props) {
   const { text } = props;
   return (
     <div className={[styles.horizontal, styles.container_title].join(' ')}>
-      <Typography sx variant={'h5'} className={styles.title}>
+      <Typography variant={'h5'} className={styles.title}>
         {text}
       </Typography>
       <FinalPoint {...{ form: false }} />

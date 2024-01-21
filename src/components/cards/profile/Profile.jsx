@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { MotionDiv } from '@/libs/animation/Motion';
 import blurUrl from '@/utils/blurs/Blurs';
 import styles from '@/components/cards/profile/Profile.module.css';
 // --
@@ -19,7 +20,11 @@ export default function Profile(props) {
   ];
   return (
     <Card className={styles.profile_card} sx={baseCard}>
-      <div className={[styles.horizontal, styles.profile_avatar_container].join(' ')}>
+      <MotionDiv
+        className={[styles.horizontal, styles.profile_avatar_container].join(' ')}
+        initial={{ opacity: 0, translateX: -80 }}
+        animate={{ opacity: 1, translateX: 0 }}
+      >
         <div className={[styles.horizontal, styles.profile_avatar].join(' ')}>
           <Image
             width={110}
@@ -32,7 +37,7 @@ export default function Profile(props) {
             alt={`Author's image`}
           />
         </div>
-      </div>
+      </MotionDiv>
       <CardContent sx={{ padding: '2.4rem' }}>
         <div className={[styles.horizontal, styles.profile_card_text_container].join(' ')}>
           <Typography variant={'h4'} className={styles.profile_card_title}>

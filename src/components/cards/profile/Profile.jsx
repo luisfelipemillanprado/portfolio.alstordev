@@ -20,12 +20,7 @@ export default function Profile(props) {
   ];
   return (
     <Card className={styles.profile_card} sx={baseCard}>
-      <MotionDiv
-        className={[styles.horizontal, styles.profile_avatar_container].join(' ')}
-        initial={{ opacity: 0, translateX: -80 }}
-        animate={{ opacity: 1, translateX: 0 }}
-        transition={{ duration: 0.7 }}
-      >
+      <div className={[styles.horizontal, styles.profile_avatar_container].join(' ')}>
         <div className={[styles.horizontal, styles.profile_avatar].join(' ')}>
           <Image
             width={110}
@@ -38,13 +33,13 @@ export default function Profile(props) {
             alt={`Author's image`}
           />
         </div>
-      </MotionDiv>
+      </div>
       <CardContent sx={{ padding: '2.4rem' }}>
         <MotionDiv
           className={[styles.horizontal, styles.profile_card_text_container].join(' ')}
           initial={{ opacity: 0, translateX: 80 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{ duration: 1.4, delay: 0.5, type: 'spring' }}
         >
           <Typography variant={'h4'} className={styles.profile_card_title}>
             {name}
@@ -52,9 +47,9 @@ export default function Profile(props) {
         </MotionDiv>
         <MotionDiv
           className={[styles.horizontal, styles.profile_card_text_container].join(' ')}
-          initial={{ opacity: 0, translateX: -80 }}
+          initial={{ opacity: 0, translateX: -57 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.6, delay: 1.2 }}
+          transition={{ duration: 1.5, delay: 0.8, type: 'spring' }}
         >
           <Typography variant={'body1'} gutterBottom className={styles.profile_card_paragraph}>
             {text}
@@ -65,9 +60,9 @@ export default function Profile(props) {
             return (
               <Grid item key={element.id}>
                 <MotionDiv
-                  initial={{ opacity: 0, translateX: 80 }}
+                  initial={{ opacity: 0, translateX: 50 }}
                   animate={{ opacity: 1, translateX: 0 }}
-                  transition={{ duration: 0.7, delay: index * 0.3 }}
+                  transition={{ duration: 1.4, delay: (index / 2) * 0.3, type: 'spring' }}
                 >
                   <SocialNetwork {...{ href: element.href, icon: element.icon }} />
                 </MotionDiv>

@@ -1,6 +1,7 @@
 import Hobby from '@/components/cards/hobby/Hobby';
 import { Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { MotionDiv } from '@/libs/animation/Motion';
 import db from '@/utils/db/db';
 import styles from '@/components/aboutme/hobbies/Hobbies.module.css';
 // --
@@ -33,10 +34,17 @@ export default function Hobbies() {
         sx={{ justifyContent: 'space-between' }}
         container
       >
-        {db.hobbies.map((element) => {
+        {db.hobbies.map((element, index) => {
           return (
             <Grid key={element.id} item>
-              <Hobby {...{ hobby: element.hobby }} />
+              <MotionDiv
+                initial={{ opacity: 0, translateX: -20 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                viewport={{ once: true, amount: 0 }}
+                transition={{ duration: 1.4, delay: (index / 4) * 0.2, type: 'spring' }}
+              >
+                <Hobby {...{ hobby: element.hobby }} />
+              </MotionDiv>
             </Grid>
           );
         })}

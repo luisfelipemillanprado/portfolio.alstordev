@@ -2,6 +2,7 @@ import Advance from '@/components/myservices/skills/advance/Advance';
 import Teamwork from '@/components/myservices/skills/teamwork/Teamwork';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
+import { MotionDiv } from '@/libs/animation/Motion';
 import db from '@/utils/db/db';
 import styles from '@/components/myservices/skills/Skills.module.css';
 // --
@@ -36,20 +37,34 @@ export default function Skills(props) {
         rowGap={2}
         container
       >
-        {arraySwitch(skills).map((skill) => {
+        {arraySwitch(skills).map((skill, index) => {
           return (
             <Grid item key={skill.id}>
               {skills === 'soft' ? (
-                <Teamwork {...{ text: skill.text, percent: skill.percent, ariaLabel: skill.ariaLabel }} />
+                <MotionDiv
+                  initial={{ opacity: 0, translateX: -20 }}
+                  whileInView={{ opacity: 1, translateX: 0 }}
+                  viewport={{ once: true, amount: 0 }}
+                  transition={{ duration: 1.4, delay: (index / 2) * 0.2, type: 'spring' }}
+                >
+                  <Teamwork {...{ text: skill.text, percent: skill.percent, ariaLabel: skill.ariaLabel }} />
+                </MotionDiv>
               ) : (
-                <Advance
-                  {...{
-                    icon: skill.icon,
-                    text: skill.text,
-                    percent: skill.percent,
-                    ariaLabel: skill.ariaLabel,
-                  }}
-                />
+                <MotionDiv
+                  initial={{ opacity: 0, translateX: index % 2 === 0 ? -20 : 20, translateY: -20 }}
+                  whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                  viewport={{ once: true, amount: 0 }}
+                  transition={{ duration: 1, delay: (index / 5) * 0.2, type: 'spring' }}
+                >
+                  <Advance
+                    {...{
+                      icon: skill.icon,
+                      text: skill.text,
+                      percent: skill.percent,
+                      ariaLabel: skill.ariaLabel,
+                    }}
+                  />
+                </MotionDiv>
               )}
             </Grid>
           );

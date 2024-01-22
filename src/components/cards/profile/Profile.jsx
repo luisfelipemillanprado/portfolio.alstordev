@@ -60,8 +60,8 @@ export default function Profile(props) {
             return (
               <Grid item key={element.id}>
                 <MotionDiv
-                  initial={{ opacity: 0, translateX: 50 }}
-                  animate={{ opacity: 1, translateX: 0 }}
+                  initial={{ opacity: 0, translateX: 50, rotate: 0 }}
+                  animate={{ opacity: 1, translateX: 0, rotate: 360 }}
                   transition={{ duration: 1.4, delay: (index / 2) * 0.3, type: 'spring' }}
                 >
                   <SocialNetwork {...{ href: element.href, icon: element.icon }} />

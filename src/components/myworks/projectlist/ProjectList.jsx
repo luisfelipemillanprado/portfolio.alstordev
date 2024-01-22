@@ -1,6 +1,7 @@
 import Title from '@/components/title/Title';
 import Project from '@/components/cards/project/Project';
 import { Grid } from '@mui/material';
+import { MotionDiv } from '@/libs/animation/Motion';
 import db from '@/utils/db/db';
 import styles from '@/components/myworks/projectlist/ProjectList.module.css';
 // --
@@ -16,7 +17,7 @@ export default function ProjectList(props) {
         rowGap={{ m320: 1.6, m360: 1.8, m375: 1.9, m390: 2, m400: 2.6, m500: 2.2 }}
         container
       >
-        {db.projects.map((element) => {
+        {db.projects.map((element, index) => {
           return (
             <Grid
               m320={5.7}
@@ -31,14 +32,21 @@ export default function ProjectList(props) {
               item
               key={element.id}
             >
-              <Project
-                {...{
-                  cover: element.cover,
-                  title: element.title,
-                  percent: element.percent,
-                  href: element.href,
-                }}
-              />
+              <MotionDiv
+                initial={{ opacity: 0, translateX: index % 2 === 0 ? -20 : 20, translateY: -20 }}
+                whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                viewport={{ once: true, amount: 0 }}
+                transition={{ duration: 1, delay: (index / 3) * 0.2, type: 'spring' }}
+              >
+                <Project
+                  {...{
+                    cover: element.cover,
+                    title: element.title,
+                    percent: element.percent,
+                    href: element.href,
+                  }}
+                />
+              </MotionDiv>
             </Grid>
           );
         })}

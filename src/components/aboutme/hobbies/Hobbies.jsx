@@ -41,7 +41,7 @@ export default function Hobbies() {
                 initial={{ opacity: 0, translateX: -20 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 viewport={{ once: true, amount: 0 }}
-                transition={{ duration: 1.4, delay: (index / 4) * 0.2, type: 'spring' }}
+                transition={{ duration: 1.4, delay: (index / 5) * 0.2, type: 'spring' }}
               >
                 <Hobby {...{ hobby: element.hobby }} />
               </MotionDiv>

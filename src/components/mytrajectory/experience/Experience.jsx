@@ -4,6 +4,7 @@ import StepLabel from '@mui/material/StepLabel';
 import StepContent from '@mui/material/StepContent';
 import Typography from '@mui/material/Typography';
 import CheckIcon from '@mui/icons-material/Check';
+import { MotionDiv } from '@/libs/animation/Motion';
 import styles from '@/components/mytrajectory/experience/Experience.module.css';
 // --
 export default function Experience(props) {
@@ -140,7 +141,13 @@ export default function Experience(props) {
   ];
   // --
   return (
-    <div className={styles.experience_steps_container}>
+    <MotionDiv
+      className={styles.experience_steps_container}
+      initial={{ opacity: 0, translateX: -18 }}
+      whileInView={{ opacity: 1, translateX: 0 }}
+      viewport={{ once: true, amount: 0 }}
+      transition={{ duration: 1.2, type: 'spring' }}
+    >
       <Stepper orientation={'vertical'} connector={<span />}>
         {items.map((item, index) => (
           <Step active key={item.id}>
@@ -149,13 +156,20 @@ export default function Experience(props) {
             </StepLabel>
             {index !== items.length - 1 ? (
               <StepContent className={styles.experience_conector}>
-                {item.subTitle}
-                {item.description}
+                <MotionDiv
+                  initial={{ opacity: 0, translateX: 18 }}
+                  whileInView={{ opacity: 1, translateX: 0 }}
+                  viewport={{ once: true, amount: 0 }}
+                  transition={{ duration: 1.2, delay: 0.2, type: 'spring' }}
+                >
+                  {item.subTitle}
+                  {item.description}
+                </MotionDiv>
               </StepContent>
             ) : null}
           </Step>
         ))}
       </Stepper>
-    </div>
+    </MotionDiv>
   );
 }

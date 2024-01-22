@@ -18,10 +18,10 @@ export default function PersonalDetails(props) {
           return (
             <Grid key={element.id} item>
               <MotionDiv
-                initial={{ opacity: 0, translateX: 45 }}
+                initial={{ opacity: 0, translateX: 18 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 viewport={{ once: true, amount: 0 }}
-                transition={{ duration: 1.4, delay: (index / 3) * 0.2, type: 'spring' }}
+                transition={{ duration: 1.4, delay: (index / 4) * 0.2, type: 'spring' }}
               >
                 <Items params={{ item: element.specification }} />
               </MotionDiv>

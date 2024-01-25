@@ -157,7 +157,7 @@ export default function Experience(props) {
             {index !== items.length - 1 ? (
               <StepContent className={styles.experience_conector}>
                 <MotionDiv
-                  initial={{ opacity: 0, translateX: 18 }}
+                  initial={{ opacity: 0, translateX: 17 }}
                   whileInView={{ opacity: 1, translateX: 0 }}
                   viewport={{ once: true, amount: 0 }}
                   transition={{ duration: 1.2, delay: 0.2, type: 'spring' }}

@@ -7,7 +7,7 @@ import styles from '@/components/myservices/Services.module.css';
 // --
 export default function Services(props) {
   return (
-    <section className={styles.services}>
+    <section id={'go-to-skills-section'} className={styles.services}>
       <div className={[styles.vertical, styles.services_container_all].join(' ')}>
         <Badges {...{ icon: 'skills' }} />
         <div className={[styles.vertical, styles.wrapper].join(' ')}>

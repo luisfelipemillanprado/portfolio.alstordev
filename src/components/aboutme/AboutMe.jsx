@@ -8,7 +8,7 @@ import styles from '@/components/aboutme/AboutMe.module.css';
 // --
 export default function AboutMe(props) {
   return (
-    <section className={styles.aboutme}>
+    <section id={'go-to-info-section'} className={styles.aboutme}>
       <div className={[styles.vertical, styles.aboutme_container_all].join(' ')}>
         <Badges {...{ icon: 'info' }} />
         <div className={[styles.vertical, styles.wrapper].join(' ')}>

@@ -22,3 +22,20 @@
     width: 100%;
     margin-bottom: 1.1rem;
 }
+
+/*                              ------------------------------------------------                                   */
+/*                                                   MEDIA-QUERIES...                                              */
+/*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
+/*                   ------------------------Tablet------------------------                         */
+@media screen and (min-width:1000px) {
+    .project_list_container_title {
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .project_list_container_title {
+        margin-bottom: 1.5rem;
+    }
+}

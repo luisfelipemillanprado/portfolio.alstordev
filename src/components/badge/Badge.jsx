@@ -3,6 +3,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import BuildIcon from '@mui/icons-material/Build';
 import HistoryIcon from '@mui/icons-material/History';
 import EmailIcon from '@mui/icons-material/Email';
+import WorkIcon from '@mui/icons-material/Work';
 import styles from '@/components/badge/Badge.module.css';
 // --
 export default function Badges(props) {
@@ -24,6 +25,10 @@ export default function Badges(props) {
       case 'contact':
         return {
           icon: <EmailIcon className={styles.badge_icon} />,
+        };
+      case 'works':
+        return {
+          icon: <WorkIcon className={styles.badge_icon} />,
         };
     }
   };

@@ -42,19 +42,19 @@ export default function Skills(props) {
             <Grid item key={skill.id}>
               {skills === 'soft' ? (
                 <MotionDiv
-                  initial={{ opacity: 0, translateX: -20 }}
+                  initial={{ opacity: 0, translateX: -15 }}
                   whileInView={{ opacity: 1, translateX: 0 }}
                   viewport={{ once: true, amount: 0 }}
-                  transition={{ duration: 1.4, delay: (index / 2) * 0.2, type: 'spring' }}
+                  transition={{ duration: 1.2, delay: (index / 2) * 0.2, type: 'spring' }}
                 >
                   <Teamwork {...{ text: skill.text, percent: skill.percent, ariaLabel: skill.ariaLabel }} />
                 </MotionDiv>
               ) : (
                 <MotionDiv
-                  initial={{ opacity: 0, translateX: index % 2 === 0 ? -20 : 20, translateY: -20 }}
+                  initial={{ opacity: 0, translateX: index % 2 === 0 ? -10 : 10, translateY: -10 }}
                   whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
                   viewport={{ once: true, amount: 0 }}
-                  transition={{ duration: 1, delay: (index / 5) * 0.2, type: 'spring' }}
+                  transition={{ duration: 1.2, delay: (index / 5) * 0.2, type: 'spring' }}
                 >
                   <Advance
                     {...{

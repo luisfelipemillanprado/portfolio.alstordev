@@ -33,7 +33,7 @@ export default function ProjectList(props) {
               key={element.id}
             >
               <MotionDiv
-                initial={{ opacity: 0, translateX: index % 2 === 0 ? -20 : 20, translateY: -20 }}
+                initial={{ opacity: 0, translateX: index % 2 === 0 ? -17 : 17, translateY: -17 }}
                 whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
                 viewport={{ once: true, amount: 0 }}
                 transition={{ duration: 1, delay: (index / 3) * 0.2, type: 'spring' }}

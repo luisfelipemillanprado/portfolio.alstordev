@@ -38,7 +38,7 @@ export default function Hobbies() {
           return (
             <Grid key={element.id} item>
               <MotionDiv
-                initial={{ opacity: 0, translateX: -20 }}
+                initial={{ opacity: 0, translateX: -18 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 viewport={{ once: true, amount: 0 }}
                 transition={{ duration: 1.4, delay: (index / 5) * 0.2, type: 'spring' }}

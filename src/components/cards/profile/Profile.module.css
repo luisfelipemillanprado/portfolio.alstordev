@@ -49,12 +49,17 @@
 }
 
 .profile_card_paragraph {
-    font-size: 1.44rem !important;
+    font-size: 1.44rem;
+    margin-bottom: 0.525rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--second-font-color);
 }
 
 /*                              ------------------------------------------------                                   */
 /*                                                   MEDIA-QUERIES...                                              */
 /*                              ------------------------------------------------                                   */
+/*                                                                                                                 */
 /*                   ------------------------Mobile------------------------                         */
 @media screen and (min-width:390px) {
     .profile_card {
@@ -62,16 +67,39 @@
     }
 
     .profile_card_paragraph {
-        font-size: 1.46rem !important;
+        font-size: 1.46rem;
     }
 }
 
-@media screen and (min-width:450px) {
+@media screen and (min-width:540px) {
     .profile_card {
         width: 21.3rem;
     }
 
     .profile_card_paragraph {
-        font-size: 1.47rem !important;
+        font-size: 1.47rem;
+    }
+}
+
+/*                   ------------------------Desktop------------------------                         */
+@media screen and (min-width:1200px) {
+    .profile_card {
+        width: 21.6rem;
+        height: 18.2rem;
+    }
+
+    .profile_avatar {
+        width: 15rem;
+        height: 15rem;
+        top: -7.6rem;
+    }
+
+    .profile_card_cover {
+        width: 11.4rem;
+        height: 11.4rem;
+    }
+
+    .profile_card_paragraph {
+        font-size: 1.5rem;
     }
 }

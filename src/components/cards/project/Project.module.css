@@ -85,7 +85,7 @@
     }
 
     .project_card_actions {
-        padding: 0.4rem 1.2rem 1rem 1.2rem !important;
+        padding: 0.4rem 1.2rem 1.1rem 1.2rem !important;
     }
 }
 
@@ -128,7 +128,7 @@
 
 @media screen and (min-width:1114px) {
     .project_card_image {
-        height: 13rem;
+        height: 12.8rem;
     }
 }
 

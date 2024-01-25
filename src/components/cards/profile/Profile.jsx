@@ -39,7 +39,7 @@ export default function Profile(props) {
           className={[styles.horizontal, styles.profile_card_text_container].join(' ')}
           initial={{ opacity: 0, translateX: 80 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 1.4, delay: 0.5, type: 'spring' }}
+          transition={{ duration: 1.5, type: 'spring' }}
         >
           <Typography variant={'h4'} className={styles.profile_card_title}>
             {name}
@@ -51,9 +51,7 @@ export default function Profile(props) {
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.5, delay: 0.8, type: 'spring' }}
         >
-          <Typography variant={'body1'} gutterBottom className={styles.profile_card_paragraph}>
-            {text}
-          </Typography>
+          <p className={styles.profile_card_paragraph}>{text}</p>
         </MotionDiv>
         <Grid sx={{ justifyContent: 'space-between' }} container>
           {array.map((element, index) => {
@@ -64,7 +62,9 @@ export default function Profile(props) {
                   animate={{ opacity: 1, translateX: 0, rotate: 360 }}
                   transition={{ duration: 1.4, delay: (index / 2) * 0.3, type: 'spring' }}
                 >
-                  <SocialNetwork {...{ href: element.href, icon: element.icon }} />
+                  <SocialNetwork
+                    {...{ href: element.href, icon: element.icon, ariaLabel: element.ariaLabel }}
+                  />
                 </MotionDiv>
               </Grid>
             );

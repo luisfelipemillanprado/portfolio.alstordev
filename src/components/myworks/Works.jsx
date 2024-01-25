@@ -6,7 +6,7 @@ export default function Works() {
   return (
     <section className={styles.works}>
       <div className={[styles.vertical, styles.works_container_all].join(' ')}>
-        <Badges {...{ icon: 'skills' }} />
+        <Badges {...{ icon: 'works' }} />
         <div className={[styles.horizontal, styles.works_list].join(' ')}>
           <ProjectList />
         </div>

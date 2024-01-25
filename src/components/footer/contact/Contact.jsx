@@ -28,7 +28,7 @@ export default function Contact() {
                 initial={{ opacity: 0, translateX: 21 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
                 viewport={{ once: true, amount: 0 }}
-                transition={{ duration: 1.4, delay: (index / 2) * 0.2, type: 'spring' }}
+                transition={{ duration: 1.2, delay: (index / 2) * 0.2, type: 'spring' }}
               >
                 {element.icon}
                 <div className={[styles.vertical, styles.contact_text_container].join(' ')}>

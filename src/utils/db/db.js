@@ -1,4 +1,10 @@
 const db = {
+  mainInfo: {
+    name: 'LUIS FELIPE',
+    profession: 'DEVELOPER & DESING',
+    devname: '@Alstordev',
+    rights: '2023. All rights reserved.',
+  },
   details: [
     { specification: 'Age : 24 years', id: Math.random() },
     { specification: 'Job : Freelancer', id: Math.random() },

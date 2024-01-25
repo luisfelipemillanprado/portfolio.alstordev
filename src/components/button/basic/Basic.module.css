@@ -54,6 +54,10 @@
     justify-content: center;
 }
 
+.basic_link:hover {
+    background-color: var(--third-card-background-color);
+}
+
 .basic_button {
     font-size: 1.54rem !important;
     padding: 0rem 0rem 0rem 1.5rem;

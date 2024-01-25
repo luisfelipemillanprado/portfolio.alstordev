@@ -33,6 +33,9 @@ const theme = createTheme({
       '@media screen and (min-width:500px)': {
         fontSize: '1.74rem',
       },
+      '@media screen and (min-width:1200px)': {
+        fontSize: '1.8rem',
+      },
     },
     h5: {
       fontSize: '2rem',
